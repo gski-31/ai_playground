@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden Game Export Tool</title>
+    <style>
+        :root {
+            --bg: #0f1923;
+            --bg2: #1a2633;
+            --bg3: #243447;
+            --accent: #e53935;
+            --accent-hover: #ef5350;
+            --text: #e0e6ed;
+            --text-dim: #8899aa;
+            --border: #2a3f52;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --danger: #f44336;
+            --radius: 8px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: var(--bg2);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+        }
+
+        .header h1 { font-size: 20px; font-weight: 600; letter-spacing: -0.3px; }
+        .header .subtitle { color: var(--text-dim); font-size: 13px; }
+
+        .tabs {
+            display: flex;
+            background: var(--bg2);
+            border-bottom: 1px solid var(--border);
+            padding: 0 24px;
+        }
+
+        .tab {
+            padding: 12px 20px;
+            cursor: pointer;
+            color: var(--text-dim);
+            border-bottom: 2px solid transparent;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .tab:hover { color: var(--text); }
+        .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+        .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+        .panel { display: none; }
+        .panel.active { display: block; }
+
+        .card {
+            background: var(--bg2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .card h2 { font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-size: 13px; color: var(--text-dim); margin-bottom: 6px; }
+
+        .input-row { display: flex; gap: 8px; }
+
+        input[type="text"] {
+            flex: 1;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 10px 14px;
+            color: var(--text);
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus { border-color: var(--accent); }
+        input[type="text"]::placeholder { color: var(--text-dim); opacity: 0.6; }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .btn-primary { background: var(--accent); color: white; }
+        .btn-primary:hover { background: var(--accent-hover); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn-secondary { background: var(--bg3); color: var(--text); border: 1px solid var(--border); }
+        .btn-secondary:hover { background: #2e4459; }
+        .btn-sm { padding: 6px 14px; font-size: 13px; }
+
+        .game-list { max-height: 400px; overflow-y: auto; }
+
+        .game-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            gap: 16px;
+        }
+
+        .game-item:hover { background: var(--bg3); border-color: var(--accent); }
+        .game-item.selected { background: rgba(229, 57, 53, 0.1); border-color: var(--accent); }
+
+        .game-item .radio {
+            width: 18px; height: 18px;
+            border: 2px solid var(--border);
+            border-radius: 50%;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .game-item.selected .radio { border-color: var(--accent); }
+        .game-item.selected .radio::after {
+            content: '';
+            position: absolute;
+            top: 3px; left: 3px;
+            width: 8px; height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .game-info { flex: 1; min-width: 0; }
+
+        .game-title {
+            font-size: 14px; font-weight: 500;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+
+        .game-meta {
+            font-size: 12px; color: var(--text-dim);
+            margin-top: 2px;
+            display: flex; gap: 12px; flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .badge-red { background: rgba(229, 57, 53, 0.2); color: #ef9a9a; }
+        .badge-blue { background: rgba(33, 150, 243, 0.2); color: #64b5f6; }
+        .badge-green { background: rgba(76, 175, 80, 0.2); color: #81c784; }
+        .badge-orange { background: rgba(255, 152, 0, 0.2); color: #ffb74d; }
+        .badge-purple { background: rgba(156, 39, 176, 0.2); color: #ce93d8; }
+
+        .progress-container { display: none; }
+        .progress-container.visible { display: block; }
+
+        .progress-bar-track {
+            height: 6px; background: var(--bg);
+            border-radius: 3px; overflow: hidden; margin: 12px 0;
+        }
+
+        .progress-bar-fill {
+            height: 100%; background: var(--accent);
+            border-radius: 3px; transition: width 0.3s; width: 0%;
+        }
+
+        .progress-text { font-size: 13px; color: var(--text-dim); }
+        .progress-complete { color: var(--success); font-weight: 500; }
+        .progress-error { color: var(--danger); font-weight: 500; }
+
+        .status-msg {
+            padding: 10px 16px; border-radius: var(--radius);
+            font-size: 13px; margin-bottom: 12px;
+        }
+
+        .status-error { background: rgba(244, 67, 54, 0.1); border: 1px solid rgba(244, 67, 54, 0.3); color: #ef9a9a; }
+        .status-success { background: rgba(76, 175, 80, 0.1); border: 1px solid rgba(76, 175, 80, 0.3); color: #a5d6a7; }
+        .status-info { background: rgba(33, 150, 243, 0.1); border: 1px solid rgba(33, 150, 243, 0.3); color: #90caf9; }
+
+        .search-bar { margin-bottom: 12px; }
+        .search-bar input { width: 100%; }
+
+        .spinner {
+            display: inline-block; width: 16px; height: 16px;
+            border: 2px solid var(--border); border-top-color: var(--accent);
+            border-radius: 50%; animation: spin 0.6s linear infinite;
+            vertical-align: middle; margin-right: 8px;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+        .empty-state { text-align: center; padding: 48px 24px; color: var(--text-dim); }
+
+        .result-list { list-style: none; padding: 0; }
+        .result-list li { padding: 6px 0; font-size: 14px; }
+        .result-list li::before { content: "\2713 "; color: var(--success); font-weight: bold; }
+
+        .game-size { font-variant-numeric: tabular-nums; }
+
+        @media (max-width: 640px) {
+            .container { padding: 12px; }
+            .input-row { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>Eden Game Export Tool</h1>
+            <div class="subtitle">Export and import NSP games for the Eden emulator</div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <div class="tab active" data-panel="export-panel" onclick="switchTab(this)">Export</div>
+        <div class="tab" data-panel="import-panel" onclick="switchTab(this)">Import</div>
+    </div>
+
+    <div class="container">
+
+        <!-- EXPORT PANEL -->
+        <div id="export-panel" class="panel active">
+            <div id="export-status"></div>
+
+            <div class="card">
+                <h2>1. Eden Installation</h2>
+                <div class="form-group">
+                    <label>Eden Root Directory</label>
+                    <div class="input-row">
+                        <input type="text" id="eden-path" placeholder="C:\MY_GAMES\Eden">
+                        <button class="btn btn-secondary" onclick="browseFolder('eden-path', 'Select Eden Root Directory')">Browse</button>
+                        <button class="btn btn-primary" onclick="scanGames()" id="scan-btn">Scan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="game-list-card" style="display:none;">
+                <h2>2. Select Game <span id="game-count" style="font-weight:normal; color:var(--text-dim); font-size:13px;"></span></h2>
+                <div class="search-bar">
+                    <input type="text" id="game-search" placeholder="Search by title or ID..." oninput="filterGames()">
+                </div>
+                <div class="game-list" id="game-list"></div>
+            </div>
+
+            <div class="card" id="options-card" style="display:none;">
+                <h2>3. Export to ZIP</h2>
+                <p style="font-size: 13px; color: var(--text-dim); margin-bottom: 16px;">
+                    One ZIP per game — includes all NSPs (base + updates + DLC), saves, mods, and config.
+                </p>
+                <div class="form-group">
+                    <label>Save ZIP to</label>
+                    <div class="input-row">
+                        <input type="text" id="output-dir" placeholder="C:\Exports">
+                        <button class="btn btn-secondary" onclick="browseFolder('output-dir', 'Select Output Directory')">Browse</button>
+                        <button class="btn btn-primary" onclick="startExport()" id="export-btn">Export</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card progress-container" id="progress-card">
+                <h2>Export Progress</h2>
+                <div class="progress-bar-track">
+                    <div class="progress-bar-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text" id="progress-text">Starting...</div>
+            </div>
+        </div>
+
+        <!-- IMPORT PANEL -->
+        <div id="import-panel" class="panel">
+            <div id="import-status"></div>
+
+            <div class="card">
+                <h2>Reimport Game</h2>
+                <p style="font-size: 13px; color: var(--text-dim); margin-bottom: 16px;">
+                    Restore a previously exported game. Everything in the archive is restored automatically.
+                </p>
+
+                <div class="form-group">
+                    <label>Eden Root Directory</label>
+                    <div class="input-row">
+                        <input type="text" id="import-eden-path" placeholder="C:\MY_GAMES\Eden">
+                        <button class="btn btn-secondary btn-sm" onclick="browseFolder('import-eden-path', 'Select Eden Root Directory')">Browse</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Export archive (.zip) or extracted folder</label>
+                    <div class="input-row">
+                        <input type="text" id="import-archive-path" placeholder="C:\Exports\export_0100152000022000.zip">
+                        <button class="btn btn-secondary btn-sm" onclick="browseFile('import-archive-path', 'Select Export Archive', [['ZIP files', '*.zip']])">Browse</button>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="startImport()" id="import-btn">Import Game</button>
+            </div>
+
+            <div class="card" id="import-results" style="display:none;">
+                <h2>Import Results</h2>
+                <ul class="result-list" id="import-result-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API = '';
+
+        let allGames = [];
+        let selectedGame = null;
+        let progressInterval = null;
+
+        function switchTab(el) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+            el.classList.add('active');
+            document.getElementById(el.dataset.panel).classList.add('active');
+        }
+
+        function formatSize(bytes) {
+            if (bytes === 0) return '0 B';
+            const units = ['B', 'KB', 'MB', 'GB', 'TB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(1024));
+            return (bytes / Math.pow(1024, i)).toFixed(i > 1 ? 1 : 0) + ' ' + units[i];
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function showStatus(id, msg, type) {
+            const el = document.getElementById(id);
+            el.innerHTML = `<div class="status-msg status-${type}">${msg}</div>`;
+            if (type !== 'error') setTimeout(() => { if (el.innerHTML.includes(msg)) el.innerHTML = ''; }, 8000);
+        }
+
+        function clearStatus(id) { document.getElementById(id).innerHTML = ''; }
+
+        // Browse
+        async function browseFolder(inputId, title) {
+            const input = document.getElementById(inputId);
+            try {
+                const res = await fetch(API + '/api/browse', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ mode: 'folder', title, initial_dir: input.value.trim() || undefined }),
+                });
+                const data = await res.json();
+                if (data.path && !data.cancelled) input.value = data.path;
+            } catch (err) { showStatus('export-status', 'Browse failed: ' + err.message, 'error'); }
+        }
+
+        async function browseFile(inputId, title, filetypes) {
+            const input = document.getElementById(inputId);
+            try {
+                const res = await fetch(API + '/api/browse', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ mode: 'file', title, initial_dir: input.value.trim() || undefined, filetypes }),
+                });
+                const data = await res.json();
+                if (data.path && !data.cancelled) input.value = data.path;
+            } catch (err) { showStatus('import-status', 'Browse failed: ' + err.message, 'error'); }
+        }
+
+        // Scan
+        async function scanGames() {
+            const edenPath = document.getElementById('eden-path').value.trim();
+            if (!edenPath) { showStatus('export-status', 'Please enter the Eden root directory.', 'error'); return; }
+
+            const btn = document.getElementById('scan-btn');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner"></span>Scanning...';
+            clearStatus('export-status');
+
+            try {
+                const res = await fetch(API + '/api/scan', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ eden_root: edenPath }),
+                });
+                const data = await res.json();
+                if (!res.ok) { showStatus('export-status', data.error || 'Scan failed', 'error'); return; }
+
+                allGames = data.games;
+                selectedGame = null;
+
+                if (allGames.length === 0) {
+                    showStatus('export-status', 'No games found in the NSPs folder.', 'info');
+                    document.getElementById('game-list-card').style.display = 'none';
+                    return;
+                }
+
+                document.getElementById('game-count').textContent = `(${allGames.length} games found)`;
+                renderGameList(allGames);
+                document.getElementById('game-list-card').style.display = '';
+                document.getElementById('options-card').style.display = 'none';
+
+            } catch (err) {
+                showStatus('export-status', 'Connection error: ' + err.message, 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Scan';
+            }
+        }
+
+        function renderGameList(games) {
+            const list = document.getElementById('game-list');
+            if (games.length === 0) {
+                list.innerHTML = '<div class="empty-state">No matching games</div>';
+                return;
+            }
+
+            list.innerHTML = games.map(g => `
+                <div class="game-item ${selectedGame && selectedGame.id === g.id ? 'selected' : ''}"
+                     onclick="selectGame('${g.id}')" data-id="${g.id}">
+                    <div class="radio"></div>
+                    <div class="game-info">
+                        <div class="game-title">${escapeHtml(g.title)}</div>
+                        <div class="game-meta">
+                            <span>${g.id}</span>
+                            <span class="game-size">${formatSize(g.total_size)}</span>
+                            ${g.base_nsp ? '<span class="badge badge-red">Base</span>' : ''}
+                            ${g.update_count ? `<span class="badge badge-blue">${g.update_count} update${g.update_count !== 1 ? 's' : ''}</span>` : ''}
+                            ${g.dlc_count ? `<span class="badge badge-orange">${g.dlc_count} DLC</span>` : ''}
+                            ${g.save_count ? `<span class="badge badge-green">${g.save_count} save${g.save_count !== 1 ? 's' : ''}</span>` : ''}
+                            ${g.has_mods ? '<span class="badge badge-purple">Mods</span>' : ''}
+                            ${g.has_config ? '<span class="badge badge-purple">Config</span>' : ''}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function selectGame(id) {
+            selectedGame = allGames.find(g => g.id === id);
+            document.querySelectorAll('.game-item').forEach(el => {
+                el.classList.toggle('selected', el.dataset.id === id);
+            });
+            document.getElementById('options-card').style.display = '';
+        }
+
+        function filterGames() {
+            const q = document.getElementById('game-search').value.trim().toLowerCase();
+            if (!q) { renderGameList(allGames); return; }
+            renderGameList(allGames.filter(g =>
+                g.title.toLowerCase().includes(q) || g.id.toLowerCase().includes(q)
+            ));
+        }
+
+        // Export
+        async function startExport() {
+            if (!selectedGame) { showStatus('export-status', 'Please select a game.', 'error'); return; }
+            const outputDir = document.getElementById('output-dir').value.trim();
+            if (!outputDir) { showStatus('export-status', 'Please specify an output directory.', 'error'); return; }
+
+            const btn = document.getElementById('export-btn');
+            btn.disabled = true;
+            clearStatus('export-status');
+
+            try {
+                const res = await fetch(API + '/api/export', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        eden_root: document.getElementById('eden-path').value.trim(),
+                        title_id: selectedGame.id,
+                        output_dir: outputDir,
+                        nsp_files: selectedGame._nsps,
+                        game_title: selectedGame.title,
+                    }),
+                });
+                const data = await res.json();
+                if (!res.ok) { showStatus('export-status', data.error || 'Export failed', 'error'); btn.disabled = false; return; }
+
+                document.getElementById('progress-card').classList.add('visible');
+                pollProgress();
+            } catch (err) {
+                showStatus('export-status', 'Connection error: ' + err.message, 'error');
+                btn.disabled = false;
+            }
+        }
+
+        function pollProgress() {
+            if (progressInterval) clearInterval(progressInterval);
+            progressInterval = setInterval(async () => {
+                try {
+                    const res = await fetch(API + '/api/progress');
+                    const data = await res.json();
+                    document.getElementById('progress-fill').style.width = data.percent + '%';
+
+                    if (data.done) {
+                        clearInterval(progressInterval);
+                        progressInterval = null;
+                        document.getElementById('export-btn').disabled = false;
+                        if (data.error) {
+                            document.getElementById('progress-text').innerHTML =
+                                `<span class="progress-error">Error: ${escapeHtml(data.error)}</span>`;
+                        } else {
+                            document.getElementById('progress-text').innerHTML =
+                                `<span class="progress-complete">Export complete!</span> Saved to: ${escapeHtml(data.output_path || '')}`;
+                        }
+                    } else {
+                        document.getElementById('progress-text').textContent =
+                            `${data.percent}% \u2014 ${data.status}`;
+                    }
+                } catch (e) {}
+            }, 500);
+        }
+
+        // Import
+        async function startImport() {
+            const edenPath = document.getElementById('import-eden-path').value.trim();
+            const archivePath = document.getElementById('import-archive-path').value.trim();
+            if (!edenPath) { showStatus('import-status', 'Please enter the Eden root directory.', 'error'); return; }
+            if (!archivePath) { showStatus('import-status', 'Please enter the archive path.', 'error'); return; }
+
+            const btn = document.getElementById('import-btn');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner"></span>Importing...';
+            clearStatus('import-status');
+            document.getElementById('import-results').style.display = 'none';
+
+            try {
+                const res = await fetch(API + '/api/import', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ eden_root: edenPath, archive_path: archivePath }),
+                });
+                const data = await res.json();
+                if (!res.ok) { showStatus('import-status', data.error || 'Import failed', 'error'); return; }
+
+                showStatus('import-status',
+                    `Successfully imported <strong>${escapeHtml(data.game_title || data.title_id)}</strong>`, 'success');
+                const list = document.getElementById('import-result-list');
+                list.innerHTML = data.results.map(r => `<li>${escapeHtml(r)}</li>`).join('');
+                document.getElementById('import-results').style.display = '';
+            } catch (err) {
+                showStatus('import-status', 'Connection error: ' + err.message, 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Import Game';
+            }
+        }
+
+        document.getElementById('eden-path').addEventListener('keydown', e => { if (e.key === 'Enter') scanGames(); });
+    </script>
+</body>
+</html>

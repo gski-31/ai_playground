@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Roulette</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header>
+      <h1>🎰 Restaurant Roulette</h1>
+      <p class="tagline">Can't decide where to eat? Let fate decide!</p>
+    </header>
+
+    <!-- Filters Panel -->
+    <section id="filters" class="card">
+      <h2>Set Your Preferences</h2>
+
+      <div class="filter-group">
+        <label for="distance-slider">
+          Distance: <span id="distance-value">10</span> miles
+        </label>
+        <input type="range" id="distance-slider" min="0.5" max="50" step="0.5" value="10">
+      </div>
+
+      <div class="filter-group">
+        <label for="rating-slider">
+          Minimum Rating: <span id="rating-value">3.5</span> ⭐
+        </label>
+        <input type="range" id="rating-slider" min="1" max="5" step="0.5" value="3.5">
+      </div>
+
+      <div class="filter-group">
+        <label for="exclude-input">Exclude Cuisines</label>
+        <div class="tag-input-wrapper">
+          <div id="exclude-tags" class="tags-container"></div>
+          <input type="text" id="exclude-input" placeholder="Type cuisine and press Enter (e.g., sushi, pizza)">
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <label>Price Level</label>
+        <div class="price-buttons">
+          <button class="price-btn active" data-price="1">$</button>
+          <button class="price-btn active" data-price="2">$$</button>
+          <button class="price-btn active" data-price="3">$$$</button>
+          <button class="price-btn active" data-price="4">$$$$</button>
+        </div>
+      </div>
+
+      <button id="spin-btn" class="btn-spin" disabled>
+        <span class="spin-icon">🎲</span> SPIN!
+      </button>
+      <p id="location-status" class="status-text">Detecting your location...</p>
+    </section>
+
+    <!-- Roulette Wheel / Spinner -->
+    <section id="roulette-section" class="card hidden">
+      <div id="roulette-container">
+        <div id="roulette-pointer">▼</div>
+        <div id="roulette-strip"></div>
+      </div>
+    </section>
+
+    <!-- Result Card -->
+    <section id="result-section" class="card hidden">
+      <div id="result-card">
+        <div id="result-photo-container">
+          <img id="result-photo" src="" alt="Restaurant photo">
+          <div id="result-no-photo" class="no-photo hidden">📍</div>
+        </div>
+        <div id="result-info">
+          <h2 id="result-name"></h2>
+          <div id="result-rating" class="rating-display"></div>
+          <p id="result-address" class="result-address"></p>
+          <p id="result-price" class="result-price"></p>
+          <div class="result-actions">
+            <a id="result-directions" href="#" target="_blank" rel="noopener" class="btn-directions">
+              📍 Get Directions
+            </a>
+            <button id="respin-btn" class="btn-respin">🎲 Respin!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- No Results -->
+    <section id="no-results" class="card hidden">
+      <div class="no-results-content">
+        <p class="no-results-emoji">😕</p>
+        <h2>No restaurants found!</h2>
+        <p>Try expanding your distance or lowering the minimum rating.</p>
+        <button id="adjust-filters-btn" class="btn-respin">Adjust Filters</button>
+      </div>
+    </section>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="hidden">
+      <div class="loader"></div>
+      <p>Finding restaurants near you...</p>
+    </div>
+  </div>
+
+  <script>
+    // User must supply their Google Maps API key here or via config.js
+    window.GOOGLE_MAPS_API_KEY = '';
+  </script>
+  <script src="js/config.js" onerror="console.log('No config.js found, using inline key')"></script>
+  <script>
+    // Load Google Maps JS API dynamically
+    (function loadGoogleMaps() {
+      const key = window.GOOGLE_MAPS_API_KEY;
+      if (!key) {
+        document.getElementById('location-status').textContent =
+          '⚠️ No API key set. Create js/config.js with: window.GOOGLE_MAPS_API_KEY = "YOUR_KEY";';
+        return;
+      }
+      const script = document.createElement('script');
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&libraries=places&callback=initApp`;
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>

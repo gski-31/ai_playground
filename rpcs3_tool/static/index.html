@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPCS3 Game Export Tool</title>
+    <style>
+        :root {
+            --bg: #0f1923;
+            --bg2: #1a2633;
+            --bg3: #243447;
+            --accent: #2196F3;
+            --accent-hover: #42a5f5;
+            --text: #e0e6ed;
+            --text-dim: #8899aa;
+            --border: #2a3f52;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --danger: #f44336;
+            --radius: 8px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: var(--bg2);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        .header .subtitle {
+            color: var(--text-dim);
+            font-size: 13px;
+        }
+
+        .tabs {
+            display: flex;
+            background: var(--bg2);
+            border-bottom: 1px solid var(--border);
+            padding: 0 24px;
+        }
+
+        .tab {
+            padding: 12px 20px;
+            cursor: pointer;
+            color: var(--text-dim);
+            border-bottom: 2px solid transparent;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .tab:hover { color: var(--text); }
+        .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .panel {
+            display: none;
+        }
+
+        .panel.active {
+            display: block;
+        }
+
+        .card {
+            background: var(--bg2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .card h2 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            color: var(--text-dim);
+            margin-bottom: 6px;
+        }
+
+        .input-row {
+            display: flex;
+            gap: 8px;
+        }
+
+        input[type="text"], input[type="file"] {
+            flex: 1;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 10px 14px;
+            color: var(--text);
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--accent);
+        }
+
+        input[type="text"]::placeholder {
+            color: var(--text-dim);
+            opacity: 0.6;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover { background: var(--accent-hover); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .btn-secondary {
+            background: var(--bg3);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover { background: #2e4459; }
+
+        .btn-danger {
+            background: var(--danger);
+            color: white;
+        }
+
+        .btn-sm {
+            padding: 6px 14px;
+            font-size: 13px;
+        }
+
+        /* Game list */
+        .game-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .game-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            gap: 16px;
+        }
+
+        .game-item:hover { background: var(--bg3); border-color: var(--accent); }
+        .game-item.selected { background: rgba(33, 150, 243, 0.1); border-color: var(--accent); }
+
+        .game-item .radio {
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--border);
+            border-radius: 50%;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .game-item.selected .radio {
+            border-color: var(--accent);
+        }
+
+        .game-item.selected .radio::after {
+            content: '';
+            position: absolute;
+            top: 3px; left: 3px;
+            width: 8px; height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .game-info { flex: 1; min-width: 0; }
+
+        .game-title {
+            font-size: 14px;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .game-meta {
+            font-size: 12px;
+            color: var(--text-dim);
+            margin-top: 2px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .badge-blue { background: rgba(33, 150, 243, 0.2); color: #64b5f6; }
+        .badge-green { background: rgba(76, 175, 80, 0.2); color: #81c784; }
+        .badge-orange { background: rgba(255, 152, 0, 0.2); color: #ffb74d; }
+        .badge-purple { background: rgba(156, 39, 176, 0.2); color: #ce93d8; }
+
+        /* Checkbox */
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--accent);
+        }
+
+        /* Progress */
+        .progress-container {
+            display: none;
+        }
+
+        .progress-container.visible {
+            display: block;
+        }
+
+        .progress-bar-track {
+            height: 6px;
+            background: var(--bg);
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 12px 0;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 3px;
+            transition: width 0.3s;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 13px;
+            color: var(--text-dim);
+        }
+
+        .progress-complete {
+            color: var(--success);
+            font-weight: 500;
+        }
+
+        .progress-error {
+            color: var(--danger);
+            font-weight: 500;
+        }
+
+        /* Status messages */
+        .status-msg {
+            padding: 10px 16px;
+            border-radius: var(--radius);
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .status-error {
+            background: rgba(244, 67, 54, 0.1);
+            border: 1px solid rgba(244, 67, 54, 0.3);
+            color: #ef9a9a;
+        }
+
+        .status-success {
+            background: rgba(76, 175, 80, 0.1);
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            color: #a5d6a7;
+        }
+
+        .status-info {
+            background: rgba(33, 150, 243, 0.1);
+            border: 1px solid rgba(33, 150, 243, 0.3);
+            color: #90caf9;
+        }
+
+        /* Search */
+        .search-bar {
+            margin-bottom: 12px;
+        }
+
+        .search-bar input {
+            width: 100%;
+        }
+
+        /* Spinner */
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--bg3); }
+
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 48px 24px;
+            color: var(--text-dim);
+        }
+
+        .empty-state .icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            opacity: 0.3;
+        }
+
+        /* Import results */
+        .result-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .result-list li {
+            padding: 6px 0;
+            font-size: 14px;
+            color: var(--text);
+        }
+
+        .result-list li::before {
+            content: "\2713 ";
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* Size formatting */
+        .game-size {
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container { padding: 12px; }
+            .checkbox-group { flex-direction: column; }
+            .input-row { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>RPCS3 Game Export Tool</h1>
+            <div class="subtitle">Export and import PS3 games for RPCS3 emulator</div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <div class="tab active" data-panel="export-panel" onclick="switchTab(this)">Export</div>
+        <div class="tab" data-panel="import-panel" onclick="switchTab(this)">Import</div>
+    </div>
+
+    <div class="container">
+
+        <!-- ==================== EXPORT PANEL ==================== -->
+        <div id="export-panel" class="panel active">
+            <div id="export-status"></div>
+
+            <!-- Step 1: RPCS3 path -->
+            <div class="card">
+                <h2>1. RPCS3 Installation</h2>
+                <div class="form-group">
+                    <label>RPCS3 Root Directory</label>
+                    <div class="input-row">
+                        <input type="text" id="rpcs3-path" placeholder="C:\RPCS3 or /home/user/rpcs3">
+                        <button class="btn btn-secondary" onclick="browseFolder('rpcs3-path', 'Select RPCS3 Root Directory')">Browse</button>
+                        <button class="btn btn-primary" onclick="scanGames()" id="scan-btn">Scan</button>
+                    </div>
+                </div>
+                <div id="rpcs3-version" style="font-size: 13px; color: var(--text-dim);"></div>
+
+            </div>
+
+            <!-- Step 2: Select game -->
+            <div class="card" id="game-list-card" style="display:none;">
+                <h2>2. Select Game <span id="game-count" style="font-weight:normal; color:var(--text-dim); font-size:13px;"></span></h2>
+                <div class="search-bar">
+                    <input type="text" id="game-search" placeholder="Search by title or ID..." oninput="filterGames()">
+                </div>
+                <div class="game-list" id="game-list"></div>
+            </div>
+
+            <!-- Step 3: Export -->
+            <div class="card" id="options-card" style="display:none;">
+                <h2>3. Export to ZIP</h2>
+                <p style="font-size: 13px; color: var(--text-dim); margin-bottom: 16px;">
+                    One ZIP per game — includes game folder, updates, DLC, saves, patches, and custom config.
+                </p>
+
+                <div class="form-group">
+                    <label>Save ZIP to</label>
+                    <div class="input-row">
+                        <input type="text" id="output-dir" placeholder="C:\Exports or /home/user/exports">
+                        <button class="btn btn-secondary" onclick="browseFolder('output-dir', 'Select Output Directory')">Browse</button>
+                        <button class="btn btn-primary" onclick="startExport()" id="export-btn">Export</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress -->
+            <div class="card progress-container" id="progress-card">
+                <h2>Export Progress</h2>
+                <div class="progress-bar-track">
+                    <div class="progress-bar-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text" id="progress-text">Starting...</div>
+            </div>
+        </div>
+
+        <!-- ==================== IMPORT PANEL ==================== -->
+        <div id="import-panel" class="panel">
+            <div id="import-status"></div>
+
+            <div class="card">
+                <h2>Reimport Game</h2>
+                <p style="font-size: 13px; color: var(--text-dim); margin-bottom: 16px;">
+                    Restore a previously exported game back into an RPCS3 installation. Everything in the archive will be restored automatically.
+                </p>
+
+                <div class="form-group">
+                    <label>RPCS3 Root Directory</label>
+                    <div class="input-row">
+                        <input type="text" id="import-rpcs3-path" placeholder="C:\RPCS3 or /home/user/rpcs3">
+                        <button class="btn btn-secondary btn-sm" onclick="browseFolder('import-rpcs3-path', 'Select RPCS3 Root Directory')">Browse</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Export archive (.zip) or extracted folder</label>
+                    <div class="input-row">
+                        <input type="text" id="import-archive-path" placeholder="C:\Exports\export_BLUS30443.zip">
+                        <button class="btn btn-secondary btn-sm" onclick="browseFile('import-archive-path', 'Select Export Archive', [['ZIP files', '*.zip'], ['All files', '*.*']])">Browse</button>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="startImport()" id="import-btn">Import Game</button>
+            </div>
+
+            <div class="card" id="import-results" style="display:none;">
+                <h2>Import Results</h2>
+                <ul class="result-list" id="import-result-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API = '';  // same origin
+
+        // ---- State ----
+        let allGames = [];
+        let selectedGameId = null;
+        let selectedDiscFolder = '';
+        let selectedGameTitle = '';
+        let progressInterval = null;
+
+        // ---- Tabs ----
+        function switchTab(el) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+            el.classList.add('active');
+            document.getElementById(el.dataset.panel).classList.add('active');
+        }
+
+        // ---- Utility ----
+        function formatSize(bytes) {
+            if (bytes === 0) return '0 B';
+            const units = ['B', 'KB', 'MB', 'GB', 'TB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(1024));
+            return (bytes / Math.pow(1024, i)).toFixed(i > 1 ? 1 : 0) + ' ' + units[i];
+        }
+
+        function showStatus(containerId, msg, type) {
+            const el = document.getElementById(containerId);
+            el.innerHTML = `<div class="status-msg status-${type}">${msg}</div>`;
+            if (type !== 'error') {
+                setTimeout(() => { if (el.innerHTML.includes(msg)) el.innerHTML = ''; }, 8000);
+            }
+        }
+
+        function clearStatus(containerId) {
+            document.getElementById(containerId).innerHTML = '';
+        }
+
+        // ---- Browse dialogs ----
+        async function browseFolder(inputId, title) {
+            const input = document.getElementById(inputId);
+            try {
+                const res = await fetch(API + '/api/browse', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        mode: 'folder',
+                        title: title || 'Select a folder',
+                        initial_dir: input.value.trim() || undefined,
+                    }),
+                });
+                const data = await res.json();
+                if (data.path && !data.cancelled) {
+                    input.value = data.path;
+                }
+            } catch (err) {
+                showStatus('export-status', 'Browse failed: ' + err.message, 'error');
+            }
+        }
+
+        async function browseFile(inputId, title, filetypes) {
+            const input = document.getElementById(inputId);
+            try {
+                const res = await fetch(API + '/api/browse', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        mode: 'file',
+                        title: title || 'Select a file',
+                        initial_dir: input.value.trim() || undefined,
+                        filetypes: filetypes || null,
+                    }),
+                });
+                const data = await res.json();
+                if (data.path && !data.cancelled) {
+                    input.value = data.path;
+                }
+            } catch (err) {
+                showStatus('import-status', 'Browse failed: ' + err.message, 'error');
+            }
+        }
+
+        // ---- Scan games ----
+        async function scanGames() {
+            const rpcs3Path = document.getElementById('rpcs3-path').value.trim();
+            if (!rpcs3Path) {
+                showStatus('export-status', 'Please enter the RPCS3 root directory path.', 'error');
+                return;
+            }
+
+            const btn = document.getElementById('scan-btn');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner"></span>Scanning...';
+            clearStatus('export-status');
+
+            try {
+                const res = await fetch(API + '/api/scan', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ rpcs3_root: rpcs3Path }),
+                });
+                const data = await res.json();
+
+                if (!res.ok) {
+                    showStatus('export-status', data.error || 'Scan failed', 'error');
+                    return;
+                }
+
+                allGames = data.games;
+                selectedGameId = null;
+
+                if (data.rpcs3_version && data.rpcs3_version !== 'Unknown') {
+                    document.getElementById('rpcs3-version').textContent = 'RPCS3 Version: ' + data.rpcs3_version;
+                }
+
+                if (allGames.length === 0) {
+                    showStatus('export-status', 'No games found in the specified directory.', 'info');
+                    document.getElementById('game-list-card').style.display = 'none';
+                    return;
+                }
+
+                document.getElementById('game-count').textContent = `(${allGames.length} games found)`;
+                renderGameList(allGames);
+                document.getElementById('game-list-card').style.display = '';
+                document.getElementById('options-card').style.display = 'none';
+
+            } catch (err) {
+                showStatus('export-status', 'Connection error: ' + err.message, 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Scan';
+            }
+        }
+
+        function renderGameList(games) {
+            const list = document.getElementById('game-list');
+
+            if (games.length === 0) {
+                list.innerHTML = '<div class="empty-state"><div class="icon">?</div><div>No matching games</div></div>';
+                return;
+            }
+
+            list.innerHTML = games.map(g => `
+                <div class="game-item ${selectedGameId === g.id ? 'selected' : ''}"
+                     onclick="selectGame('${g.id}')" data-id="${g.id}">
+                    <div class="radio"></div>
+                    <div class="game-info">
+                        <div class="game-title">${escapeHtml(g.title)}</div>
+                        <div class="game-meta">
+                            <span>${g.id}</span>
+                            <span class="game-size">${formatSize(g.size)}</span>
+                            ${g.version ? `<span>v${g.version}</span>` : ''}
+                            ${g.has_disc ? '<span class="badge badge-blue">Disc</span>' : ''}
+                            ${g.has_saves ? `<span class="badge badge-green">${g.save_count} save${g.save_count !== 1 ? 's' : ''}</span>` : ''}
+                            ${g.has_config ? '<span class="badge badge-purple">Config</span>' : ''}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function selectGame(id) {
+            selectedGameId = id;
+            const game = allGames.find(g => g.id === id);
+            selectedDiscFolder = game ? (game.disc_folder || '') : '';
+            selectedGameTitle = game ? (game.title || '') : '';
+            document.querySelectorAll('.game-item').forEach(el => {
+                el.classList.toggle('selected', el.dataset.id === id);
+            });
+            document.getElementById('options-card').style.display = '';
+        }
+
+        function filterGames() {
+            const q = document.getElementById('game-search').value.trim().toLowerCase();
+            if (!q) {
+                renderGameList(allGames);
+                return;
+            }
+            const filtered = allGames.filter(g =>
+                g.title.toLowerCase().includes(q) || g.id.toLowerCase().includes(q)
+            );
+            renderGameList(filtered);
+        }
+
+        // ---- Export ----
+        async function startExport() {
+            if (!selectedGameId) {
+                showStatus('export-status', 'Please select a game first.', 'error');
+                return;
+            }
+
+            const outputDir = document.getElementById('output-dir').value.trim();
+            if (!outputDir) {
+                showStatus('export-status', 'Please specify an output directory.', 'error');
+                return;
+            }
+
+            const btn = document.getElementById('export-btn');
+            btn.disabled = true;
+            clearStatus('export-status');
+
+            try {
+                const res = await fetch(API + '/api/export', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        rpcs3_root: document.getElementById('rpcs3-path').value.trim(),
+                        game_id: selectedGameId,
+                        output_dir: outputDir,
+                        disc_folder: selectedDiscFolder,
+                        game_title: selectedGameTitle,
+                    }),
+                });
+                const data = await res.json();
+
+                if (!res.ok) {
+                    showStatus('export-status', data.error || 'Export failed to start', 'error');
+                    btn.disabled = false;
+                    return;
+                }
+
+                // Show progress
+                const card = document.getElementById('progress-card');
+                card.classList.add('visible');
+                pollProgress();
+
+            } catch (err) {
+                showStatus('export-status', 'Connection error: ' + err.message, 'error');
+                btn.disabled = false;
+            }
+        }
+
+        function pollProgress() {
+            if (progressInterval) clearInterval(progressInterval);
+
+            progressInterval = setInterval(async () => {
+                try {
+                    const res = await fetch(API + '/api/progress');
+                    const data = await res.json();
+
+                    document.getElementById('progress-fill').style.width = data.percent + '%';
+
+                    if (data.done) {
+                        clearInterval(progressInterval);
+                        progressInterval = null;
+                        document.getElementById('export-btn').disabled = false;
+
+                        if (data.error) {
+                            document.getElementById('progress-text').innerHTML =
+                                `<span class="progress-error">Error: ${escapeHtml(data.error)}</span>`;
+                        } else {
+                            document.getElementById('progress-text').innerHTML =
+                                `<span class="progress-complete">Export complete!</span> Saved to: ${escapeHtml(data.output_path || '')}`;
+                        }
+                    } else {
+                        document.getElementById('progress-text').textContent =
+                            `${data.percent}% \u2014 ${data.status}`;
+                    }
+                } catch (e) {
+                    // ignore transient fetch errors
+                }
+            }, 500);
+        }
+
+        // ---- Import ----
+        async function startImport() {
+            const rpcs3Path = document.getElementById('import-rpcs3-path').value.trim();
+            const archivePath = document.getElementById('import-archive-path').value.trim();
+
+            if (!rpcs3Path) {
+                showStatus('import-status', 'Please enter the RPCS3 root directory.', 'error');
+                return;
+            }
+            if (!archivePath) {
+                showStatus('import-status', 'Please enter the export archive path.', 'error');
+                return;
+            }
+
+            const btn = document.getElementById('import-btn');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner"></span>Importing...';
+            clearStatus('import-status');
+            document.getElementById('import-results').style.display = 'none';
+
+            try {
+                const res = await fetch(API + '/api/import', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        rpcs3_root: rpcs3Path,
+                        archive_path: archivePath,
+                    }),
+                });
+                const data = await res.json();
+
+                if (!res.ok) {
+                    showStatus('import-status', data.error || 'Import failed', 'error');
+                    return;
+                }
+
+                showStatus('import-status',
+                    `Successfully imported <strong>${escapeHtml(data.game_title || data.game_id)}</strong>`, 'success');
+
+                const list = document.getElementById('import-result-list');
+                list.innerHTML = data.results.map(r => `<li>${escapeHtml(r)}</li>`).join('');
+                document.getElementById('import-results').style.display = '';
+
+            } catch (err) {
+                showStatus('import-status', 'Connection error: ' + err.message, 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Import Game';
+            }
+        }
+
+        // ---- Keyboard shortcut ----
+        document.getElementById('rpcs3-path').addEventListener('keydown', e => {
+            if (e.key === 'Enter') scanGames();
+        });
+    </script>
+</body>
+</html>

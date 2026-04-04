@@ -1,0 +1,574 @@
+[2026-04-03 08:27:56] === Eden copy started ===
+[2026-04-03 08:27:56] Source: C:\MY_GAMES\Eden\
+[2026-04-03 08:27:56] Dest:   D:\Eden
+[2026-04-03 08:27:56] Found 54 files to process.
+[2026-04-03 08:55:18]    Copied in 1641.25s at 4.1 MB/s: NSPs\Donkey Kong Country Tropical Freeze [0100C1F0051B6000][v0][Base].nsp
+[2026-04-03 08:55:18]    Pausing 300s - large file (6802.36 MB)
+[2026-04-03 09:20:47]    Copied in 1229.9s at 4.8 MB/s: NSPs\Kirby and the Forgotten Land [01004D300C5AE000][v0][Base].nsp
+[2026-04-03 09:20:47]    Pausing 300s - large file (5883.97 MB)
+[2026-04-03 09:47:12]    Copied in 1284.09s at 5.1 MB/s: NSPs\Luigi's Mansion 3 [0100DCA0064A6000][v0][Base].nsp
+[2026-04-03 09:47:12]    Pausing 300s - large file (6504.21 MB)
+[2026-04-03 10:03:02]    Copied in 650.36s at 4.7 MB/s: NSPs\Luigi’s Mansion 2 HD [010048701995E000][v0][Base].nsp
+[2026-04-03 10:03:02]    Pausing 300s - large file (3063.19 MB)
+[2026-04-03 10:44:39]    Copied in 2197.16s at 4.6 MB/s: NSPs\Mario & Luigi Brothership [01006D0017F7A000][v0][Base].nsp
+[2026-04-03 10:44:39]    Pausing 300s - large file (10083.29 MB)
+[2026-04-03 10:57:02]    Copied in 442.59s at 5.4 MB/s: NSPs\Mario + Rabbids Kingdom Battle [010067300059A000][v0][Base].nsp
+[2026-04-03 10:57:02]    Pausing 300s - large file (2405.9 MB)
+[2026-04-03 11:21:57]    Copied in 1195.28s at 4.9 MB/s: NSPs\Mario + Rabbids® Sparks of Hope [0100317013770000][v0][Base].nsp
+[2026-04-03 11:21:57]    Pausing 300s - large file (5835.78 MB)
+[2026-04-03 11:36:28]    Copied in 571s at 5.1 MB/s: NSPs\Mario Golf Super Rush [0100C9C00E25C000][v0][Base].nsp
+[2026-04-03 11:36:28]    Pausing 300s - large file (2925.96 MB)
+[2026-04-03 12:02:10]    Copied in 1241.77s at 5.6 MB/s: NSPs\Mario Kart 8 Deluxe [0100152000022000][v0][Base].nsp
+[2026-04-03 12:02:10]    Pausing 300s - large file (6931.76 MB)
+[2026-04-03 12:12:43]    Copied in 332.55s at 5.8 MB/s: NSPs\Mario Strikers Battle League [010019401051C000][v0][Base].nsp
+[2026-04-03 12:12:43]    Pausing 300s - large file (1912.96 MB)
+[2026-04-03 12:23:25]    Copied in 342.06s at 5.6 MB/s: NSPs\Mario Tennis Aces [0100BDE00862A000][v0][Base].nsp
+[2026-04-03 12:23:25]    Pausing 300s - large file (1906.44 MB)
+[2026-04-03 12:33:01]    Copied in 276.03s at 4.7 MB/s: NSPs\Mario vs. Donkey Kong [0100B99019412000][v0][Base].nsp
+[2026-04-03 12:33:01]    Pausing 300s - large file (1310.38 MB)
+[2026-04-03 13:21:15]    Copied in 2594.65s at 5.2 MB/s: NSPs\Marvel Ultimate Alliance 3 The Black Order [010060700AC50000][v0][Base].nsp
+[2026-04-03 13:21:15]    Pausing 300s - large file (13569.77 MB)
+[2026-04-03 13:38:11]    Copied in 715.81s at 5.9 MB/s: NSPs\Metroid Dread [010093801237C000][v0][Base].nsp
+[2026-04-03 13:38:11]    Pausing 300s - large file (4226.45 MB)
+[2026-04-03 14:01:19]    Copied in 1087.6s at 6.4 MB/s: NSPs\Metroid Prime Remastered [010012101468C000][v0][Base].nsp
+[2026-04-03 14:01:19]    Pausing 300s - large file (6926.46 MB)
+[2026-04-03 14:05:24] === Eden copy started ===
+[2026-04-03 14:05:24] Source: C:\MY_GAMES\Eden\
+[2026-04-03 14:05:24] Dest:   D:\Eden
+[2026-04-03 14:05:24] Found 503 files to process.
+[2026-04-03 14:14:35]    Copied in 551.35s at 4.7 MB/s: NSPs\New Super Mario Bros. U Deluxe [0100EA80032EA000][v0][Base].nsp
+[2026-04-03 14:14:35]    Pausing 300s - large file (2564.12 MB)
+[2026-04-03 14:44:12]    Copied in 1476.56s at 4.5 MB/s: NSPs\Paper Mario The Origami King [0100A3900C3E2000][v0][Base].nsp
+[2026-04-03 14:44:12]    Pausing 300s - large file (6616.38 MB)
+[2026-04-03 15:11:09]    Copied in 1317.34s at 4 MB/s: NSPs\Paper Mario The Thousand-Year Door [0100ECD018EBE000][v0][Base].nsp
+[2026-04-03 15:11:09]    Pausing 300s - large file (5204 MB)
+[2026-04-03 15:34:22]    Copied in 1092.52s at 4.4 MB/s: NSPs\Princess Peach Showtime! [01007A3009184000][v0][Base].nsp
+[2026-04-03 15:34:22]    Pausing 300s - large file (4765.76 MB)
+[2026-04-03 16:02:45]    Copied in 1403.3s at 3.5 MB/s: NSPs\Super Mario 3D All-Stars [010049900F546000][v0][Base].nsp
+[2026-04-03 16:02:45]    Pausing 300s - large file (4851.92 MB)
+[2026-04-03 16:19:32]    Copied in 706.93s at 4.2 MB/s: NSPs\Super Mario 3D World + Bowser's Fury [010028600EBDA000][v0][Base].nsp
+[2026-04-03 16:19:32]    Pausing 300s - large file (2943.5 MB)
+[2026-04-03 16:38:48]    Copied in 855.56s at 4.2 MB/s: NSPs\Super Mario Bros. Wonder [010015100B514000][v0][Base].nsp
+[2026-04-03 16:38:48]    Pausing 300s - large file (3594.44 MB)
+[2026-04-03 17:07:39]    Copied in 1430.95s at 3.7 MB/s: NSPs\SUPER MARIO ODYSSEY [0100000000010000][v0][Base].nsp
+[2026-04-03 17:07:39]    Pausing 300s - large file (5351.07 MB)
+[2026-04-03 17:41:29]    Copied in 1730.15s at 3.8 MB/s: NSPs\Super Mario RPG [0100BC0018138000][v0][Base].nsp
+[2026-04-03 17:41:29]    Pausing 300s - large file (6555.67 MB)
+[2026-04-03 18:45:22]    Copied in 3532.73s at 3.9 MB/s: NSPs\The Legend of Zelda Breath of the Wild [01007EF00011E000][v0][Base].nsp
+[2026-04-03 18:45:22]    Pausing 300s - large file (13805.63 MB)
+[2026-04-03 19:11:50]    Copied in 1288.54s at 4.3 MB/s: NSPs\The Legend of Zelda Echoes of Wisdom [01008CF01BAAC000][v0][Base].nsp
+[2026-04-03 19:11:50]    Pausing 300s - large file (5537.82 MB)
+[2026-04-03 19:42:02]    Copied in 1513.67s at 4 MB/s: NSPs\The Legend of Zelda Link's Awakening [01006BB00C6F0000][v0][Base].nsp
+[2026-04-03 19:42:02]    Pausing 300s - large file (5984.12 MB)
+[2026-04-03 20:53:17]    Copied in 3975.43s at 4.1 MB/s: NSPs\The Legend of Zelda Tears of the Kingdom [0100F2C0115B6000][v0][Base].nsp
+[2026-04-03 20:53:17]    Pausing 300s - large file (16356.13 MB)
+[2026-04-03 21:18:54]    Copied in 1236.26s at 4.4 MB/s: NSPs\Yoshi's Crafted World [01006000040C2000][v0][Base].nsp
+[2026-04-03 21:18:54]    Pausing 300s - large file (5423.04 MB)
+[2026-04-03 21:23:56]    Copied in 0.53s at 0 MB/s: user\cache\launched.json
+[2026-04-03 21:23:57]    Copied in 0.52s at 0 MB/s: user\cache\game_list\0100000000010000.pv.txt
+[2026-04-03 21:23:57]    Copied in 0.13s at 0 MB/s: user\cache\game_list\010012101468C000.pv.txt
+[2026-04-03 21:23:58]    Copied in 0.54s at 0 MB/s: user\cache\game_list\010015100B514000.pv.txt
+[2026-04-03 21:23:58]    Copied in 0.53s at 0 MB/s: user\cache\game_list\0100152000022000.pv.txt
+[2026-04-03 21:23:59]    Copied in 0.53s at 0 MB/s: user\cache\game_list\01001B300B9BE000.pv.txt
+[2026-04-03 21:23:59]    Copied in 0.52s at 0 MB/s: user\cache\game_list\010028600EBDA000.pv.txt
+[2026-04-03 21:24:00]    Copied in 0.53s at 0 MB/s: user\cache\game_list\0100317013770000.pv.txt
+[2026-04-03 21:24:00]    Copied in 0.14s at 0 MB/s: user\cache\game_list\010048701995E000.pv.txt
+[2026-04-03 21:24:01]    Copied in 0.53s at 0 MB/s: user\cache\game_list\010049900F546000.pv.txt
+[2026-04-03 21:24:01]    Copied in 0.13s at 0 MB/s: user\cache\game_list\01004D300C5AE000.pv.txt
+[2026-04-03 21:24:01]    Copied in 0.54s at 0 MB/s: user\cache\game_list\01006000040C2000.pv.txt
+[2026-04-03 21:24:02]    Copied in 0.51s at 0 MB/s: user\cache\game_list\010060700AC50000.pv.txt
+[2026-04-03 21:24:02]    Copied in 0.53s at 0 MB/s: user\cache\game_list\010067300059A000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.12s at 0 MB/s: user\cache\game_list\01006BB00C6F0000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.01s at 0 MB/s: user\cache\game_list\01006D0017F7A000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.01s at 0 MB/s: user\cache\game_list\01007A3009184000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\01007EF00011E000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\01008CF01BAAC000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.01s at 0 MB/s: user\cache\game_list\010093801237C000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\01009BF0072D4000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.01s at 0 MB/s: user\cache\game_list\01009D901BC56000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\0100A3900C3E2000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\0100B99019412000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\0100BC0018138000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\0100BDE00862A000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\0100C1F0051B6000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\0100C9C00E25C000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\0100DCA0064A6000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.01s at 0 MB/s: user\cache\game_list\0100EA80032EA000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\0100ECD018EBE000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\cache\game_list\0100F2C0115B6000.pv.txt
+[2026-04-03 21:24:03]    Copied in 0.04s at 1.8 MB/s: user\config\qt-config.ini
+[2026-04-03 21:24:03]    Copied in 0.03s at 0 MB/s: user\config\window_state.ini
+[2026-04-03 21:24:04]    Copied in 0.05s at 0 MB/s: user\config\custom\01001B300B9BE000.ini
+[2026-04-03 21:24:04]    Copied in 0.03s at 0 MB/s: user\config\custom\0100C1F0051B6000.ini
+[2026-04-03 21:24:04]    Copied in 0.03s at 0.3 MB/s: user\keys\prod.keys
+[2026-04-03 21:24:04]    Copied in 0.03s at 0 MB/s: user\keys\title.keys
+[2026-04-03 21:24:04]    Copied in 0.04s at 0 MB/s: user\keys\title.keys_autogenerated
+[2026-04-03 21:24:04]    Copied in 0.05s at 4.4 MB/s: user\log\eden_log.txt
+[2026-04-03 21:24:04]    Copied in 0.04s at 0.2 MB/s: user\log\eden_log.txt.old.txt
+[2026-04-03 21:24:04]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\00112165959a55aff74428a952e58268.cnmt.nca
+[2026-04-03 21:24:04]    Copied in 0.36s at 18.8 MB/s: user\nand\system\Contents\registered\001f33ef9de811d1fb7db5649f2f0c02.nca
+[2026-04-03 21:24:05]    Copied in 0.06s at 0.2 MB/s: user\nand\system\Contents\registered\01b18ad705c2e3554bbde798c9ea04aa.cnmt.nca
+[2026-04-03 21:24:05]    Copied in 0.84s at 19.8 MB/s: user\nand\system\Contents\registered\01bda6cf39420d2336c6c9e7cf854060.nca
+[2026-04-03 21:24:05]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\02e842cdc491cd4810fb64917dc4c400.cnmt.nca
+[2026-04-03 21:24:06]    Copied in 0.17s at 6.5 MB/s: user\nand\system\Contents\registered\032642c9c18f521e02ec714f200dcbbd.nca
+[2026-04-03 21:24:06]    Copied in 0.04s at 5 MB/s: user\nand\system\Contents\registered\04b437a041d55b5646c6d7180d8543db.nca
+[2026-04-03 21:24:06]    Copied in 0.22s at 18 MB/s: user\nand\system\Contents\registered\0606f268b595e85d49180ea177d381d8.nca
+[2026-04-03 21:24:06]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\06dd9045525ec7b27edbe0eb75d5a2cd.cnmt.nca
+[2026-04-03 21:24:06]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\072837bebda4cc0735c71def0caf3536.cnmt.nca
+[2026-04-03 21:24:06]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\08561bd8505f4875d9ec944d9122334d.cnmt.nca
+[2026-04-03 21:24:06]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\0cf95a44b4b0b70c6d37477909f3c529.cnmt.nca
+[2026-04-03 21:24:06]    Copied in 0.11s at 11.2 MB/s: user\nand\system\Contents\registered\0e948562c124949bee9be933e9e5b413.nca
+[2026-04-03 21:24:06]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\0f1056b9819771fdf1e0a659d26cd334.cnmt.nca
+[2026-04-03 21:24:07]    Copied in 0.3s at 20.2 MB/s: user\nand\system\Contents\registered\0fbecf3204f66b9e9c744771d564d583.nca
+[2026-04-03 21:24:07]    Copied in 0.26s at 15.7 MB/s: user\nand\system\Contents\registered\105732272eb14d35a5500353eb487478.nca
+[2026-04-03 21:24:07]    Copied in 0.05s at 0 MB/s: user\nand\system\Contents\registered\1111e1c86a3c985435c18cdf38a2d3c6.cnmt.nca
+[2026-04-03 21:24:07]    Copied in 0.05s at 10.6 MB/s: user\nand\system\Contents\registered\1171642d3ab4ea9f48b2f470d51cd4b2.nca
+[2026-04-03 21:24:07]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\118ce02f6e40b20a5469b33d5a31317b.cnmt.nca
+[2026-04-03 21:24:07]    Copied in 0.05s at 1.8 MB/s: user\nand\system\Contents\registered\11915545ac136e88c554cbe4c765e771.nca
+[2026-04-03 21:24:07]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\13c428e1a47b7c415b371ce31b7808b5.cnmt.nca
+[2026-04-03 21:24:08]    Copied in 0.38s at 20.2 MB/s: user\nand\system\Contents\registered\14b639de609b7793e0570663f389f072.nca
+[2026-04-03 21:24:08]    Copied in 0.06s at 5.8 MB/s: user\nand\system\Contents\registered\15fbbe7d22b842496b320d2dd5e4dcf6.nca
+[2026-04-03 21:24:08]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\16539d9546b1b18d30f564d33e241066.cnmt.nca
+[2026-04-03 21:24:08]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\17812c88023db068d2e63ad70f5117f7.cnmt.nca
+[2026-04-03 21:24:08]    Copied in 0.62s at 6.8 MB/s: user\nand\system\Contents\registered\18889bd7d3702f7049b9228909714dbe.nca
+[2026-04-03 21:24:09]    Copied in 0.55s at 0 MB/s: user\nand\system\Contents\registered\1bb0371d99350ac088bd5ffc9427e380.cnmt.nca
+[2026-04-03 21:24:10]    Copied in 0.68s at 0.6 MB/s: user\nand\system\Contents\registered\1e2682cc5606653a684ff26c17d546fd.nca
+[2026-04-03 21:24:10]    Copied in 0.54s at 0 MB/s: user\nand\system\Contents\registered\1e98d92bf8f44946a2702f16bc7b7f39.cnmt.nca
+[2026-04-03 21:24:17]    Copied in 6.59s at 2.6 MB/s: user\nand\system\Contents\registered\1f2cfea82e1cc1f46eb651c9ca20534f.nca
+[2026-04-03 21:24:17]    Pausing 45s - slow write detected (2.6 MB/s < 5 MB/s threshold)
+[2026-04-03 21:25:03]    Copied in 0.82s at 0.1 MB/s: user\nand\system\Contents\registered\20ffd06c6d2568fd2466b1de4ac02c20.nca
+[2026-04-03 21:25:03]    Copied in 0.57s at 0 MB/s: user\nand\system\Contents\registered\213c1ffedd5387fac887170ce3017ab7.cnmt.nca
+[2026-04-03 21:25:04]    Copied in 0.7s at 0.7 MB/s: user\nand\system\Contents\registered\21a5b43f06ef3da92bf1178e6f56f1ed.nca
+[2026-04-03 21:25:06]    Copied in 1.83s at 2.1 MB/s: user\nand\system\Contents\registered\2360fd0f4c2db9155e731830a03f743d.nca
+[2026-04-03 21:25:08]    Copied in 2s at 2.1 MB/s: user\nand\system\Contents\registered\2418f012f891d36cddf819d0537f89db.nca
+[2026-04-03 21:25:08]    Copied in 0.45s at 1.4 MB/s: user\nand\system\Contents\registered\25f4ebd3dd77d837d1cca2d8cbea5bc7.nca
+[2026-04-03 21:25:08]    Copied in 0.07s at 10.6 MB/s: user\nand\system\Contents\registered\26dcc975bfc2b59e206c661a5a237a49.nca
+[2026-04-03 21:25:09]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\27658217a9e31787cad244708002203d.cnmt.nca
+[2026-04-03 21:25:09]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\291bc0f86b8376cdec02e09918506cb3.cnmt.nca
+[2026-04-03 21:25:09]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\293047c7984d42843b5f510ef5218d7e.cnmt.nca
+[2026-04-03 21:25:09]    Copied in 0.04s at 2.5 MB/s: user\nand\system\Contents\registered\293ed49d7a07962f44f73067ae95a907.nca
+[2026-04-03 21:25:09]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\2b06e3d5f9db41b1addd26461e9fb32c.cnmt.nca
+[2026-04-03 21:25:09]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\2e0ec33c7059fea7780badcb852ca90a.cnmt.nca
+[2026-04-03 21:25:09]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\2e651a504cce628486863403a6ac4adf.cnmt.nca
+[2026-04-03 21:25:09]    Copied in 0.09s at 14 MB/s: user\nand\system\Contents\registered\2e7f2d69ea9969d8ff13c72f65f19b10.nca
+[2026-04-03 21:25:09]    Copied in 0.36s at 18.5 MB/s: user\nand\system\Contents\registered\2fe97f707e662c7c41ce453446f990e5.nca
+[2026-04-03 21:25:09]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\2fee24ac9fdfdeee4b7e715afd51dc8c.cnmt.nca
+[2026-04-03 21:25:10]    Copied in 0.2s at 17.9 MB/s: user\nand\system\Contents\registered\3271dca682064f13e4b58574ff695b1d.nca
+[2026-04-03 21:25:10]    Copied in 0.05s at 0 MB/s: user\nand\system\Contents\registered\3324b8515f13c650c985891768f3e0ef.cnmt.nca
+[2026-04-03 21:25:10]    Copied in 0.18s at 19.4 MB/s: user\nand\system\Contents\registered\398fe8ac5e950176a43b924f287ce3f7.nca
+[2026-04-03 21:25:10]    Copied in 0.04s at 2 MB/s: user\nand\system\Contents\registered\3a00a7cb68e2c6fd75bb6528a0a9cb66.nca
+[2026-04-03 21:25:10]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\3cfe5dc3b5be1c81be56897df136dcdc.cnmt.nca
+[2026-04-03 21:25:10]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\3dfabe123b7ced253e54b8269374b6cf.cnmt.nca
+[2026-04-03 21:25:10]    Copied in 0.06s at 4.3 MB/s: user\nand\system\Contents\registered\3f785c6ee17d82e16b04312a99467cde.nca
+[2026-04-03 21:25:10]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\41a29958fa259d9ca70b18fc17a12e12.cnmt.nca
+[2026-04-03 21:25:10]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\43cac821b046d0181a58699a7e65cd6d.cnmt.nca
+[2026-04-03 21:25:10]    Copied in 0.06s at 4.5 MB/s: user\nand\system\Contents\registered\43ff5de08165981cd251cf8190d77a90.nca
+[2026-04-03 21:25:10]    Copied in 0.04s at 10.5 MB/s: user\nand\system\Contents\registered\44cf0b777d388ba2b1ef2aaf3b99bdd1.nca
+[2026-04-03 21:25:11]    Copied in 0.23s at 17.5 MB/s: user\nand\system\Contents\registered\45b07a525f4ac68591562e85549229a4.nca
+[2026-04-03 21:25:11]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\4683835acf089f98079b1062be1c6ca8.cnmt.nca
+[2026-04-03 21:25:11]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\47f6001b6accbcad5a328e3074ff60a1.cnmt.nca
+[2026-04-03 21:25:11]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\4889b042c9ef1360e821855e0acf6309.cnmt.nca
+[2026-04-03 21:25:11]    Copied in 0.07s at 8.1 MB/s: user\nand\system\Contents\registered\48e0d6a659d169716ae55df49d249504.nca
+[2026-04-03 21:25:11]    Copied in 0.05s at 1.6 MB/s: user\nand\system\Contents\registered\4a909304c36d999e882e8c9acf0f8cac.nca
+[2026-04-03 21:25:11]    Copied in 0.1s at 13.9 MB/s: user\nand\system\Contents\registered\4ae3adb879c7fab47d64db11fe33dabf.nca
+[2026-04-03 21:25:11]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\4b9b199fbac194216b7f027493f73a4e.cnmt.nca
+[2026-04-03 21:25:11]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\4bdc40a17e2cc8fe1c24d5d00508ab31.cnmt.nca
+[2026-04-03 21:25:11]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\4c83e7a17dd413d96a1e23fb85258888.cnmt.nca
+[2026-04-03 21:25:12]    Copied in 0.35s at 19.3 MB/s: user\nand\system\Contents\registered\4d06506b5ded043ec118f1ecc7225109.nca
+[2026-04-03 21:25:12]    Copied in 0.07s at 2.6 MB/s: user\nand\system\Contents\registered\4db2aea51ab90725e39e2cbbd18cb560.nca
+[2026-04-03 21:25:12]    Copied in 0.07s at 11.6 MB/s: user\nand\system\Contents\registered\4e729bad130705c83e17fa5f666f0657.nca
+[2026-04-03 21:25:12]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\4f39697d38f8fe8655126257b7f57445.cnmt.nca
+[2026-04-03 21:25:12]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\4f7738b361d22fa92a6f50ab03825cf5.cnmt.nca
+[2026-04-03 21:25:12]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\512ddbb764afe06ddef3962277abdc94.cnmt.nca
+[2026-04-03 21:25:12]    Copied in 0.08s at 15.2 MB/s: user\nand\system\Contents\registered\516410a006e284f479be76cae26cdf33.nca
+[2026-04-03 21:25:12]    Copied in 0.14s at 16.7 MB/s: user\nand\system\Contents\registered\5176693203b04e22d56dd1c49fa4fce6.nca
+[2026-04-03 21:25:12]    Copied in 0.2s at 19 MB/s: user\nand\system\Contents\registered\52050265840effdd45e8f4a16e26b80d.nca
+[2026-04-03 21:25:12]    Copied in 0.14s at 14.6 MB/s: user\nand\system\Contents\registered\52687bef8bf3612da8473f0cb43bb357.nca
+[2026-04-03 21:25:13]    Copied in 0.05s at 3.6 MB/s: user\nand\system\Contents\registered\53452ab4e6d68f20cfcdf19b0a7c517c.nca
+[2026-04-03 21:25:13]    Copied in 0.05s at 0 MB/s: user\nand\system\Contents\registered\53494f6d8141a92b0dfe9e4b66f41cd2.cnmt.nca
+[2026-04-03 21:25:13]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\536391537c9f3a51d2036137ad5c80b8.cnmt.nca
+[2026-04-03 21:25:13]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\56bd7dd585dca3e09211a4a27ca257ca.cnmt.nca
+[2026-04-03 21:25:13]    Copied in 0.04s at 5.8 MB/s: user\nand\system\Contents\registered\56dee758b9a64cd0cdb665b5f36e2d2f.nca
+[2026-04-03 21:25:13]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\5898cb97feaa2470bd9ba6fc6e38644f.cnmt.nca
+[2026-04-03 21:25:13]    Copied in 0.04s at 13.2 MB/s: user\nand\system\Contents\registered\59664bad08e135f17567374c02718998.nca
+[2026-04-03 21:25:13]    Copied in 0.05s at 5 MB/s: user\nand\system\Contents\registered\59cfad63b5ca04d860a354b05d1c227e.nca
+[2026-04-03 21:25:13]    Copied in 0.06s at 6.2 MB/s: user\nand\system\Contents\registered\5c057f71b89ee35b43e8765ebefa1abd.nca
+[2026-04-03 21:25:13]    Copied in 0.05s at 3.8 MB/s: user\nand\system\Contents\registered\5c4668c5bbb6a93914b704b49b158573.nca
+[2026-04-03 21:25:13]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\5ca28c2742ac48e00b49b3cf52b664cb.cnmt.nca
+[2026-04-03 21:25:13]    Copied in 0.04s at 2.8 MB/s: user\nand\system\Contents\registered\5cc5d4f58686110902e202b9cfef2369.nca
+[2026-04-03 21:25:13]    Copied in 0.08s at 13.4 MB/s: user\nand\system\Contents\registered\5cc802748cec29b230d44f79a695c616.nca
+[2026-04-03 21:25:13]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\5e615a86face240e78e1285975683dab.cnmt.nca
+[2026-04-03 21:25:13]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\5f1a820d85afe34cb98e92a5c1a2cc7f.cnmt.nca
+[2026-04-03 21:25:13]    Copied in 0.04s at 2 MB/s: user\nand\system\Contents\registered\5fe581c21696d6fc143702918a103709.nca
+[2026-04-03 21:25:13]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\627d47bbc548c60f01d1e69bb18e3eeb.cnmt.nca
+[2026-04-03 21:25:14]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\630274802f6a469caa1686b8bf00c262.cnmt.nca
+[2026-04-03 21:25:14]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\6375c5219cf3d297f71ac6532b2c4d2f.cnmt.nca
+[2026-04-03 21:25:14]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\63b9d60ac39a8853446acedfeade383e.cnmt.nca
+[2026-04-03 21:25:14]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\6422601aa557bff262833a21a80564a0.cnmt.nca
+[2026-04-03 21:25:14]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\64695628d7ebf42a3f139039572adcf9.cnmt.nca
+[2026-04-03 21:25:14]    Copied in 0.04s at 4.2 MB/s: user\nand\system\Contents\registered\6508ed26b95e0544e4d86df5bbb4ea64.nca
+[2026-04-03 21:25:14]    Copied in 0.13s at 15.2 MB/s: user\nand\system\Contents\registered\652ff90a9d899a4e2fd38a333604a74c.nca
+[2026-04-03 21:25:14]    Copied in 0.3s at 13 MB/s: user\nand\system\Contents\registered\65edc4f9a12fd69a4b6613548b63f355.nca
+[2026-04-03 21:25:14]    Copied in 0.07s at 2.4 MB/s: user\nand\system\Contents\registered\67a1d39ca77df6dfeefda2e1afba4429.nca
+[2026-04-03 21:25:14]    Copied in 0.08s at 11.1 MB/s: user\nand\system\Contents\registered\696bf04cb1b53b54c75fa6dc8fddc6db.nca
+[2026-04-03 21:25:15]    Copied in 0.05s at 2.8 MB/s: user\nand\system\Contents\registered\698708c42e7434fe8cc77a22d0a9f2cd.nca
+[2026-04-03 21:25:15]    Copied in 0.04s at 4 MB/s: user\nand\system\Contents\registered\6b4bd1936a33eda2ab130db3a1338e2d.nca
+[2026-04-03 21:25:15]    Copied in 0.05s at 10.6 MB/s: user\nand\system\Contents\registered\6be13874044f679fc10974d6d852c340.nca
+[2026-04-03 21:25:16]    Copied in 1.06s at 17.7 MB/s: user\nand\system\Contents\registered\6bf5f6b119db507280e004eecaac7408.nca
+[2026-04-03 21:25:16]    Copied in 0.05s at 0 MB/s: user\nand\system\Contents\registered\6d2a74d08f2b721adca5dc6c892e5925.cnmt.nca
+[2026-04-03 21:25:16]    Copied in 0.35s at 12.5 MB/s: user\nand\system\Contents\registered\6d8ebb8472316b95b27fa956275e1023.nca
+[2026-04-03 21:25:16]    Copied in 0.06s at 5.5 MB/s: user\nand\system\Contents\registered\702889c5c82faf6c5ee349f25335b09a.nca
+[2026-04-03 21:25:16]    Copied in 0.05s at 1.8 MB/s: user\nand\system\Contents\registered\7100c02b4f1f30b785366477d835e2c8.nca
+[2026-04-03 21:25:16]    Copied in 0.04s at 3.5 MB/s: user\nand\system\Contents\registered\725c03555e53ad1f72ac98807f6826d9.nca
+[2026-04-03 21:25:16]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\729076cfe33ec17c7583105e2110a090.cnmt.nca
+[2026-04-03 21:25:16]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\734c64b7683d322ac5d7bf8a2d78d6c2.cnmt.nca
+[2026-04-03 21:25:17]    Copied in 0.11s at 16.3 MB/s: user\nand\system\Contents\registered\743e135275201c5a8e813e70723fc3c3.nca
+[2026-04-03 21:25:17]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\748af40c2aa339d93a657fe461c29415.cnmt.nca
+[2026-04-03 21:25:17]    Copied in 0.06s at 14.3 MB/s: user\nand\system\Contents\registered\749bde25b983c95018c778e1cc59104e.nca
+[2026-04-03 21:25:17]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\757622c9e23713648b3ae73bc10b1165.cnmt.nca
+[2026-04-03 21:25:17]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\75a0e8144d97cf3dc9d05643f7221fb5.cnmt.nca
+[2026-04-03 21:25:17]    Copied in 0.23s at 16.6 MB/s: user\nand\system\Contents\registered\764f15f09979cd8d6e70a18dbae71c87.nca
+[2026-04-03 21:25:17]    Copied in 0.05s at 0 MB/s: user\nand\system\Contents\registered\7a6a8ca97c5a27b25f0f21e45f5d4fa5.cnmt.nca
+[2026-04-03 21:25:17]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\7e1f773e64931778f3a705c763498b2b.cnmt.nca
+[2026-04-03 21:25:17]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\7e54f679262c2c07df01965d550d5758.cnmt.nca
+[2026-04-03 21:25:17]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\80a242f66f8c59d0e9130acaf0b334fd.cnmt.nca
+[2026-04-03 21:25:17]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\8108ab3913995bab40e5412a61ddc695.cnmt.nca
+[2026-04-03 21:25:17]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\81af198323a2680f10f6f45d0b310169.cnmt.nca
+[2026-04-03 21:25:18]    Copied in 0.18s at 19.2 MB/s: user\nand\system\Contents\registered\84d83980acf653e2e935ab944cf19e59.nca
+[2026-04-03 21:25:18]    Copied in 0.06s at 6.3 MB/s: user\nand\system\Contents\registered\84ddda8d6cb079a997e2e26e68cb6e2a.nca
+[2026-04-03 21:25:18]    Copied in 0.24s at 17.1 MB/s: user\nand\system\Contents\registered\84e3c723c13a36002a7c5192af9886b0.nca
+[2026-04-03 21:25:18]    Copied in 0.09s at 9.1 MB/s: user\nand\system\Contents\registered\859be81b9825be37b7aaea92810c5e58.nca
+[2026-04-03 21:25:18]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\85acd92d79ba3c5030340300e7e1423a.cnmt.nca
+[2026-04-03 21:25:18]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\87cb7ab4189750b13273005f287a3c2e.cnmt.nca
+[2026-04-03 21:25:18]    Copied in 0.06s at 2.8 MB/s: user\nand\system\Contents\registered\8804ff254dad42de7f60cfe4c808b450.nca
+[2026-04-03 21:25:18]    Copied in 0.05s at 1.8 MB/s: user\nand\system\Contents\registered\894c83eb215ea264bf59c85bcf132adb.nca
+[2026-04-03 21:25:18]    Copied in 0.04s at 7 MB/s: user\nand\system\Contents\registered\8d0bc2d0561a7dbe4ca0b41b8cf4decb.nca
+[2026-04-03 21:25:18]    Copied in 0.04s at 4 MB/s: user\nand\system\Contents\registered\8d47af50c87fd37bbfd4c40d450a6cf2.nca
+[2026-04-03 21:25:18]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\917547fdf3cad763a8663efd58704868.cnmt.nca
+[2026-04-03 21:25:19]    Copied in 0.36s at 17.6 MB/s: user\nand\system\Contents\registered\935688f09f0ca42ce6f320e8c9932ea3.nca
+[2026-04-03 21:25:19]    Copied in 0.05s at 6.2 MB/s: user\nand\system\Contents\registered\93bca42480ef67803f20a6256925f5ea.nca
+[2026-04-03 21:25:19]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\93d2078b2b9c9e746fbcfc7a388c702c.cnmt.nca
+[2026-04-03 21:25:19]    Copied in 0.28s at 17 MB/s: user\nand\system\Contents\registered\95dacf15d6e522dad6e3eecff9fd986e.nca
+[2026-04-03 21:25:19]    Copied in 0.05s at 0 MB/s: user\nand\system\Contents\registered\983fe174bafd9585087bbe518ed90555.cnmt.nca
+[2026-04-03 21:25:19]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\9a027d2dd04ea55fe8a554b03dc9205a.cnmt.nca
+[2026-04-03 21:25:19]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\9ab49039adf312d956b23dd6436f4532.cnmt.nca
+[2026-04-03 21:25:20]    Copied in 0.04s at 13 MB/s: user\nand\system\Contents\registered\9ab4f212c047001e4aa8cc8404356a4a.nca
+[2026-04-03 21:25:20]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\9b025ff9fe1f6b27904970427bda050f.cnmt.nca
+[2026-04-03 21:25:20]    Copied in 0.18s at 18.1 MB/s: user\nand\system\Contents\registered\9b1fe442efce8f3207088d1254fab1e5.nca
+[2026-04-03 21:25:20]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\9ca0d8de2394c58c0633296668f95251.cnmt.nca
+[2026-04-03 21:25:20]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\9f3c211af59bddd6330a0bf52afa9e0d.cnmt.nca
+[2026-04-03 21:25:20]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\a0737919221911442603819ea9826c17.cnmt.nca
+[2026-04-03 21:25:20]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\a168efd83bc35610625300e5e97676c4.cnmt.nca
+[2026-04-03 21:25:20]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\a1dee8330aa30e5a3d05e446738c539e.cnmt.nca
+[2026-04-03 21:25:20]    Copied in 0.05s at 8.6 MB/s: user\nand\system\Contents\registered\a2dda95631b83b656023c9feec0b0dbb.nca
+[2026-04-03 21:25:20]    Copied in 0.06s at 5.7 MB/s: user\nand\system\Contents\registered\a407b26167e2cf84e510fb757233a012.nca
+[2026-04-03 21:25:20]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\a41844c1b7974ee853e3f8fda232ce87.cnmt.nca
+[2026-04-03 21:25:20]    Copied in 0.04s at 2.2 MB/s: user\nand\system\Contents\registered\a6b7c81edc1d167d8463a23705da9a4b.nca
+[2026-04-03 21:25:20]    Copied in 0.04s at 2 MB/s: user\nand\system\Contents\registered\a6b99b375e4c26815f92e8d45a740a96.nca
+[2026-04-03 21:25:21]    Copied in 0.28s at 20 MB/s: user\nand\system\Contents\registered\a7a7d88d6e693bf99c9e61561ffb0ad2.nca
+[2026-04-03 21:25:21]    Copied in 0.05s at 0 MB/s: user\nand\system\Contents\registered\a82f04412bd75295b1cec71a5b2a37e8.cnmt.nca
+[2026-04-03 21:25:21]    Copied in 0.06s at 3.7 MB/s: user\nand\system\Contents\registered\aa6bf8109369320ed2ce5498ef1232aa.nca
+[2026-04-03 21:25:21]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\aa7c0a0e24e640bc1920c080d752891f.cnmt.nca
+[2026-04-03 21:25:21]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\aafdeddbdda1da34c4672d243cd943b9.cnmt.nca
+[2026-04-03 21:25:21]    Copied in 0.05s at 4.6 MB/s: user\nand\system\Contents\registered\ab3705119b257571fdd517e95995e14f.nca
+[2026-04-03 21:25:21]    Copied in 0.42s at 12.6 MB/s: user\nand\system\Contents\registered\ab4f87525cd1572252326f1b6455e101.nca
+[2026-04-03 21:25:21]    Copied in 0.05s at 0 MB/s: user\nand\system\Contents\registered\abb83fd9068ae9dfd29e557f0c6ddfd4.cnmt.nca
+[2026-04-03 21:25:21]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\adc9fe883a0726e9ce863e80d5e95e7c.cnmt.nca
+[2026-04-03 21:25:22]    Copied in 0.07s at 14 MB/s: user\nand\system\Contents\registered\af2bc8853b4e5f46b606933e11764c1f.nca
+[2026-04-03 21:25:22]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\af58dcaf1d8dcec7c16fa316378b97d8.cnmt.nca
+[2026-04-03 21:25:23]    Copied in 0.94s at 20 MB/s: user\nand\system\Contents\registered\afc78068f5165699a8c9db2bef43dd1d.nca
+[2026-04-03 21:25:23]    Copied in 0.79s at 19.4 MB/s: user\nand\system\Contents\registered\afd94fcd9d3f1360e98ab96ecb419c08.nca
+[2026-04-03 21:25:23]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\b1a71fccba51c766f75375e1a5527895.cnmt.nca
+[2026-04-03 21:25:23]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\b23149aa51480b2d54f5f7039510178f.cnmt.nca
+[2026-04-03 21:25:24]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\b39c1d787572f78a4e56db02508aef0b.cnmt.nca
+[2026-04-03 21:25:24]    Copied in 0.06s at 4.3 MB/s: user\nand\system\Contents\registered\b49408f2a3303bb5faf9d894673144fd.nca
+[2026-04-03 21:25:24]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\b7eca20662d5f9b597d9b6fa5797a735.cnmt.nca
+[2026-04-03 21:25:24]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\b80cf5c4fbe0ecf38eefe201b3247958.cnmt.nca
+[2026-04-03 21:25:24]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\b9152056012c0d292641980788413803.cnmt.nca
+[2026-04-03 21:25:24]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\b957215a712d89fbdf40d5b1683fc5d4.cnmt.nca
+[2026-04-03 21:25:24]    Copied in 0.08s at 13.1 MB/s: user\nand\system\Contents\registered\ba79f1f2fd72be21bfdba5e1f3bcfa1a.nca
+[2026-04-03 21:25:24]    Copied in 0.2s at 17.2 MB/s: user\nand\system\Contents\registered\bb9c88e3fefc936930890c6c010fd2ce.nca
+[2026-04-03 21:25:25]    Copied in 0.42s at 18.3 MB/s: user\nand\system\Contents\registered\bc80c2932827ae6d499836070256ed87.nca
+[2026-04-03 21:25:25]    Copied in 0.06s at 0 MB/s: user\nand\system\Contents\registered\bc98807f0cae1ecbee0f8a5ce937e9c1.cnmt.nca
+[2026-04-03 21:25:25]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\bd135273de5ba6ea951568f685ecdafa.cnmt.nca
+[2026-04-03 21:25:25]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\bd742c4edd05dbe2f498f7cb6abb24aa.cnmt.nca
+[2026-04-03 21:25:25]    Copied in 0.05s at 1.8 MB/s: user\nand\system\Contents\registered\bfab8caa278e456f9fc5e1f5fd734feb.nca
+[2026-04-03 21:25:25]    Copied in 0.08s at 10.9 MB/s: user\nand\system\Contents\registered\c37e9c6658bf28a0ec807cc2e95ea4d6.nca
+[2026-04-03 21:25:25]    Copied in 0.05s at 4.8 MB/s: user\nand\system\Contents\registered\c5adcaf1aa32b976743731fb5b71122e.nca
+[2026-04-03 21:25:25]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\cb20e6b351237b8029d6b2ebf0658328.cnmt.nca
+[2026-04-03 21:25:25]    Copied in 0.07s at 12.1 MB/s: user\nand\system\Contents\registered\cc91a03b6a28e747ca62986c7370ffed.nca
+[2026-04-03 21:25:25]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\cce0288f0c6ccf410274127cfa195c7b.cnmt.nca
+[2026-04-03 21:25:25]    Copied in 0.18s at 17.9 MB/s: user\nand\system\Contents\registered\d02e6274fe05f579a4a6ae5bac39cba9.nca
+[2026-04-03 21:25:25]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\d2941a12c046bd816e3d61932ef457b6.cnmt.nca
+[2026-04-03 21:25:26]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\d54eb63f5639b81ce2f9c4415c5e0e7e.cnmt.nca
+[2026-04-03 21:25:29]    Copied in 3.29s at 12.3 MB/s: user\nand\system\Contents\registered\d596be590d5a31aea177a38f1712f37b.nca
+[2026-04-03 21:25:29]    Copied in 0.59s at 0 MB/s: user\nand\system\Contents\registered\d62272e8166a36d617acf728a2c865b3.cnmt.nca
+[2026-04-03 21:25:30]    Copied in 0.55s at 0 MB/s: user\nand\system\Contents\registered\d69f4e423bb022ee520f1fa9e6a41976.cnmt.nca
+[2026-04-03 21:25:33]    Copied in 3.39s at 2 MB/s: user\nand\system\Contents\registered\d75837940df6546f50f9cc59c2fe9839.nca
+[2026-04-03 21:25:34]    Copied in 0.54s at 0 MB/s: user\nand\system\Contents\registered\d8b385e30c3fc896e6a3457ba491af31.cnmt.nca
+[2026-04-03 21:25:35]    Copied in 0.69s at 0.4 MB/s: user\nand\system\Contents\registered\d963bc25f408da160336ff64ce6a12f1.nca
+[2026-04-03 21:25:35]    Copied in 0.54s at 0 MB/s: user\nand\system\Contents\registered\dce1a032175d4523d569ffb75b7b9c66.cnmt.nca
+[2026-04-03 21:25:36]    Copied in 0.54s at 0 MB/s: user\nand\system\Contents\registered\dd263d05a4aff4771f5695f91c5d0800.cnmt.nca
+[2026-04-03 21:25:36]    Copied in 0.69s at 0.2 MB/s: user\nand\system\Contents\registered\dd3ba4161d18b84a20567468cd6a2eab.nca
+[2026-04-03 21:25:37]    Copied in 0.58s at 0 MB/s: user\nand\system\Contents\registered\ddb6ee8d10f66f7a7b707a98669f670e.cnmt.nca
+[2026-04-03 21:25:38]    Copied in 0.57s at 0 MB/s: user\nand\system\Contents\registered\e0d6d6983d7b83f2d2068732cdc27e4d.cnmt.nca
+[2026-04-03 21:25:38]    Copied in 0.58s at 0 MB/s: user\nand\system\Contents\registered\e2ed2269a787181624337b2105253fad.cnmt.nca
+[2026-04-03 21:25:39]    Copied in 0.55s at 0 MB/s: user\nand\system\Contents\registered\e344e9f7f1f62d6fe880cbcddb778381.cnmt.nca
+[2026-04-03 21:25:40]    Copied in 0.8s at 0.8 MB/s: user\nand\system\Contents\registered\e40783f748cb1166f9dd134bfbbb9bde.nca
+[2026-04-03 21:25:40]    Copied in 0.53s at 0 MB/s: user\nand\system\Contents\registered\e43c216abde35d1bb9ac5a6fdbf332ec.cnmt.nca
+[2026-04-03 21:25:41]    Copied in 0.66s at 0.1 MB/s: user\nand\system\Contents\registered\e45983e5e5777f858838812ae0b45816.nca
+[2026-04-03 21:25:42]    Copied in 0.67s at 0.1 MB/s: user\nand\system\Contents\registered\e4adf0b80e9c397e1a16c97ebbf88310.nca
+[2026-04-03 21:25:43]    Copied in 1.66s at 2.1 MB/s: user\nand\system\Contents\registered\e626db4c8355c37457a3db41100310b9.nca
+[2026-04-03 21:25:44]    Copied in 0.54s at 0 MB/s: user\nand\system\Contents\registered\e6be2ca8cca402960088be12f8e0a385.cnmt.nca
+[2026-04-03 21:25:44]    Copied in 0.65s at 0.1 MB/s: user\nand\system\Contents\registered\e7e65a1585897d2282cca83689c76792.nca
+[2026-04-03 21:25:45]    Copied in 0.54s at 0 MB/s: user\nand\system\Contents\registered\e9ac55bd5965ed69021e0675558fd81c.cnmt.nca
+[2026-04-03 21:25:46]    Copied in 0.54s at 0 MB/s: user\nand\system\Contents\registered\ece1d88b4660c817d56183a515372a48.cnmt.nca
+[2026-04-03 21:25:46]    Copied in 0.23s at 3 MB/s: user\nand\system\Contents\registered\edab5a3f819e3b8ea1aca0dd0cec18b0.nca
+[2026-04-03 21:25:46]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\ede17dd36a3f32d319992b3fd70a0e6e.cnmt.nca
+[2026-04-03 21:25:46]    Copied in 0.08s at 12.8 MB/s: user\nand\system\Contents\registered\ee0892fb7facb724786bf3aba9f90133.nca
+[2026-04-03 21:25:46]    Copied in 0.04s at 0 MB/s: user\nand\system\Contents\registered\ee88677aa8b3aaf6be2a5f567701b86a.cnmt.nca
+[2026-04-03 21:25:46]    Copied in 0.35s at 19.3 MB/s: user\nand\system\Contents\registered\ee8e9d5d6fffbd4aac7e8c3c647ef92f.nca
+[2026-04-03 21:25:46]    Copied in 0.05s at 0 MB/s: user\nand\system\Contents\registered\eee0a84388e1b701e24115f0bcb06653.cnmt.nca
+[2026-04-03 21:25:47]    Copied in 0.04s at 1.2 MB/s: user\nand\system\Contents\registered\f04617e00a542532389464e6368181e1.nca
+[2026-04-03 21:25:47]    Copied in 0.06s at 7 MB/s: user\nand\system\Contents\registered\f079dff07e03ce556c9b9eb08918d9d4.nca
+[2026-04-03 21:25:47]    Copied in 0.03s at 0 MB/s: user\nand\system\Contents\registered\f0af116e3e2131d0fc704351a38ea732.cnmt.nca
+[2026-04-03 21:25:53]    Copied in 6.79s at 3.8 MB/s: user\nand\system\Contents\registered\f335f831175055e673d7b22429689c32.nca
+[2026-04-03 21:25:53]    Pausing 45s - slow write detected (3.8 MB/s < 5 MB/s threshold)
+[2026-04-03 21:26:39]    Copied in 0.7s at 0 MB/s: user\nand\system\Contents\registered\f52bdd33ad8aa0a41e0e23e265ef1b67.cnmt.nca
+[2026-04-03 21:26:40]    Copied in 0.54s at 0 MB/s: user\nand\system\Contents\registered\f5718a5ad728bb81fe664e11aa41090e.cnmt.nca
+[2026-04-03 21:26:41]    Copied in 1.19s at 1.3 MB/s: user\nand\system\Contents\registered\f6ed035fe37a07d752be97d9dadcff5f.nca
+[2026-04-03 21:26:42]    Copied in 0.66s at 0.1 MB/s: user\nand\system\Contents\registered\f901b9d03b382c23889d10e99163e50c.nca
+[2026-04-03 21:26:42]    Copied in 0.54s at 0 MB/s: user\nand\system\Contents\registered\f970ca4562d7bea21c6d15118bb65e23.cnmt.nca
+[2026-04-03 21:26:43]    Copied in 0.57s at 0 MB/s: user\nand\system\Contents\registered\fa463276c7b6b908e726cec7e98eeb05.cnmt.nca
+[2026-04-03 21:26:43]    Copied in 0.55s at 0 MB/s: user\nand\system\Contents\registered\fad41b65a5c631483b965c5a9815c093.cnmt.nca
+[2026-04-03 21:26:44]    Copied in 0.54s at 0 MB/s: user\nand\system\Contents\registered\fb3ddfd7a167014518724136303e3b8b.cnmt.nca
+[2026-04-03 21:26:47]    Copied in 0.57s at 0 MB/s: user\nand\system\save\8000000000000010\su\avators\profiles.dat
+[2026-04-03 21:26:48]    Copied in 0.55s at 0.4 MB/s: user\nand\system\save\8000000000000050\settings.dat
+[2026-04-03 21:26:50]    Copied in 0.54s at 0 MB/s: user\nand\system\save\8000000000000052\settings.dat
+[2026-04-03 21:26:51]    Copied in 0.52s at 0 MB/s: user\nand\system\save\8000000000000053\settings.dat
+[2026-04-03 21:26:52]    Copied in 0.53s at 0 MB/s: user\nand\system\save\8000000000000054\settings.dat
+[2026-04-03 21:26:55]    Copied in 0.71s at 1 MB/s: user\nand\user\Contents\registered\00000001\a912a9f8c31ec66c76d785d425e3cd6c.nca
+[2026-04-03 21:27:00]    Copied in 3.99s at 2.6 MB/s: user\nand\user\Contents\registered\00000002\4721c88d2df3804325f396723bed0a5b.nca
+[2026-04-03 21:27:00]    Pausing 45s - slow write detected (2.6 MB/s < 5 MB/s threshold)
+[2026-04-03 21:27:46]    Copied in 0.85s at 0.3 MB/s: user\nand\user\Contents\registered\00000002\615c1c28ac105ccd530b39d73b9b27c9.nca
+[2026-04-03 21:27:47]    Copied in 1s at 1.3 MB/s: user\nand\user\Contents\registered\00000002\83c7fc7a27a4c6a0a623ef7a0c39d000.nca
+[2026-04-03 21:27:48]    Copied in 0.55s at 0 MB/s: user\nand\user\Contents\registered\00000003\2e689d1bdcf80fd341d33eb30601b854.nca
+[2026-04-03 21:27:50]    Copied in 2.42s at 2.2 MB/s: user\nand\user\Contents\registered\00000003\6a04a433e0c822bd3fa16588d2a589f7.nca
+[2026-04-03 21:27:52]    Copied in 0.87s at 1.4 MB/s: user\nand\user\Contents\registered\00000004\74fb27b94bb14cbd06c3fc9fa89d5c6e.nca
+[2026-04-03 21:27:52]    Copied in 0.1s at 14.5 MB/s: user\nand\user\Contents\registered\00000004\ced9154918292179eaecc8217823679b.nca
+[2026-04-03 21:30:49]    Copied in 176.28s at 5.4 MB/s: user\nand\user\Contents\registered\00000007\61c5e2bbf9ab8c546ba590f9637a0ca8.nca
+[2026-04-03 21:30:49]    Pausing 300s - large file (946.14 MB)
+[2026-04-03 21:35:49]    Copied in 0.68s at 0 MB/s: user\nand\user\Contents\registered\00000007\cc1db0e2dd869bcc599d5b73c4eb19e6.nca
+[2026-04-03 21:35:50]    Copied in 0.52s at 0 MB/s: user\nand\user\Contents\registered\00000008\f03b5231fc687bbd3e0398c549337b37.nca
+[2026-04-03 21:35:52]    Copied in 0.59s at 0.4 MB/s: user\nand\user\Contents\registered\0000000D\2242ec78302e57aa7d46fb1e96197549.nca
+[2026-04-03 21:37:07]    Copied in 75.02s at 3.9 MB/s: user\nand\user\Contents\registered\0000000E\30c15c58123e00c6f596e9d77d48a850.nca
+[2026-04-03 21:37:07]    Pausing 180s - large file (295.78 MB)
+[2026-04-03 21:40:13]    Copied in 5.08s at 10.1 MB/s: user\nand\user\Contents\registered\00000010\960df56dba6b1bef9e6c3ae4cec2d08f.nca
+[2026-04-03 21:40:13]    Copied in 0.04s at 5.5 MB/s: user\nand\user\Contents\registered\00000012\64f10ea127ce0ee57c4b47fdfa0bb4e7.nca
+[2026-04-03 21:40:13]    Copied in 0.04s at 0 MB/s: user\nand\user\Contents\registered\00000015\fefe8e7ef38cf5cd42075e760b0f5468.nca
+[2026-04-03 21:40:14]    Copied in 0.07s at 15.3 MB/s: user\nand\user\Contents\registered\00000016\48fd8328cc2589f81315ddd394756b08.nca
+[2026-04-03 21:40:14]    Copied in 0.04s at 4.2 MB/s: user\nand\user\Contents\registered\00000018\2078afdaf9f07633287031887a07c5e3.nca
+[2026-04-03 21:40:14]    Copied in 0.04s at 5.2 MB/s: user\nand\user\Contents\registered\0000001A\35ffb1db44854557e288036d03bdc1a3.nca
+[2026-04-03 21:40:14]    Copied in 0.03s at 0 MB/s: user\nand\user\Contents\registered\0000001F\0bc6e9ef00ad04f07851069a23a5f7f0.nca
+[2026-04-03 21:40:14]    Copied in 0.04s at 0.2 MB/s: user\nand\user\Contents\registered\0000001F\ada8d7f7a170328cc99df1ad088c1f1f.nca
+[2026-04-03 21:40:14]    Copied in 0.04s at 5.2 MB/s: user\nand\user\Contents\registered\0000001F\f71b4a3b9e66d457d1fff01c35057eaf.nca
+[2026-04-03 21:40:14]    Copied in 0.03s at 0 MB/s: user\nand\user\Contents\registered\00000021\ba6661d672a844e8a2d6b3e2366999fc.nca
+[2026-04-03 21:40:14]    Copied in 0.03s at 0 MB/s: user\nand\user\Contents\registered\00000023\09ea55ca36f2afe456bb6acb0267ab95.nca
+[2026-04-03 21:40:14]    Copied in 0.09s at 15.9 MB/s: user\nand\user\Contents\registered\0000002A\a6753e3d04458699b43544e46a2265d1.nca
+[2026-04-03 21:40:14]    Copied in 0.03s at 0 MB/s: user\nand\user\Contents\registered\0000002B\d48a3bfc2fad024a98e5584e6e0ec22f.nca
+[2026-04-03 21:40:14]    Copied in 0.03s at 0 MB/s: user\nand\user\Contents\registered\0000002C\96928eef788cb9684d47a75522dbd30e.nca
+[2026-04-03 21:42:40]    Copied in 145.5s at 4 MB/s: user\nand\user\Contents\registered\0000002E\da4656a23139a0b83e52247930227b7f.nca
+[2026-04-03 21:42:40]    Pausing 270s - large file (579.31 MB)
+[2026-04-03 21:47:11]    Copied in 0.74s at 0.7 MB/s: user\nand\user\Contents\registered\00000030\1cfcb552b5401f5903369816bd7f303c.nca
+[2026-04-03 21:52:50]    Copied in 337.78s at 3.1 MB/s: user\nand\user\Contents\registered\00000031\bf3e9116cdc7c182ffd1e56d7fe0f1c8.nca
+[2026-04-03 21:52:50]    Pausing 300s - large file (1032.09 MB)
+[2026-04-03 21:59:37]    Copied in 105.89s at 2.9 MB/s: user\nand\user\Contents\registered\00000033\18de8a8cdf47ca43647f420aaadef25e.nca
+[2026-04-03 21:59:37]    Pausing 180s - large file (305.8 MB)
+[2026-04-03 22:16:38]    Copied in 840.85s at 4.1 MB/s: user\nand\user\Contents\registered\00000033\ee56073dd35eb14eb7ea9ecd06c2e476.nca
+[2026-04-03 22:16:38]    Pausing 300s - large file (3426.49 MB)
+[2026-04-03 22:21:47]    Copied in 9.06s at 9.3 MB/s: user\nand\user\Contents\registered\00000034\20b52065db773b29755f3b0fbe45cbd4.nca
+[2026-04-03 22:21:49]    Copied in 0.54s at 0.2 MB/s: user\nand\user\Contents\registered\00000035\a6ee60de4f804ac979f18fb68ced5857.nca
+[2026-04-03 22:21:50]    Copied in 0.56s at 0.2 MB/s: user\nand\user\Contents\registered\00000037\40eeb107f60c5416f88a6603b0becf2b.nca
+[2026-04-03 22:21:52]    Copied in 0.57s at 0.4 MB/s: user\nand\user\Contents\registered\00000039\887d2ba006eb31b5a2d50f937628b591.nca
+[2026-04-03 22:21:53]    Copied in 1.02s at 1.2 MB/s: user\nand\user\Contents\registered\00000039\91339efa65328c44fda33ecba22508df.nca
+[2026-04-03 22:21:53]    Copied in 0.58s at 0 MB/s: user\nand\user\Contents\registered\00000039\dc331cfa6058b6fee5a2dc15f4344d68.nca
+[2026-04-03 22:21:55]    Copied in 0.56s at 0.3 MB/s: user\nand\user\Contents\registered\0000003B\f0ed28849b8449a38e174ed40305dde8.nca
+[2026-04-03 22:21:56]    Copied in 0.56s at 0 MB/s: user\nand\user\Contents\registered\0000003C\d122501b67184ede1f6c93290d8b13f4.nca
+[2026-04-03 22:21:57]    Copied in 0.57s at 0 MB/s: user\nand\user\Contents\registered\0000003D\5804550db45fdd0e70d857727ec99ea7.nca
+[2026-04-03 22:21:59]    Copied in 1.15s at 0.7 MB/s: user\nand\user\Contents\registered\0000003E\441e2544260a7c2151c62e974c909f51.nca
+[2026-04-03 22:22:00]    Copied in 0.56s at 0 MB/s: user\nand\user\Contents\registered\00000043\bdae0d8f78560643b4183104450620ce.nca
+[2026-04-03 22:22:02]    Copied in 0.88s at 1.5 MB/s: user\nand\user\Contents\registered\00000044\783f595505f31ed9f26dfaf170db7354.nca
+[2026-04-03 22:22:02]    Copied in 0.57s at 0 MB/s: user\nand\user\Contents\registered\00000044\ef7946050cbac953477cd0fcaaf54334.nca
+[2026-04-03 22:22:04]    Copied in 0.56s at 0 MB/s: user\nand\user\Contents\registered\00000045\6003b987fda43cee3d0aba9cb2e5b54c.nca
+[2026-04-03 22:22:50]    Copied in 46.58s at 5.4 MB/s: user\nand\user\Contents\registered\00000045\673d0dee6661853d0ca0bbefb2c71fe9.nca
+[2026-04-03 22:22:50]    Pausing 180s - large file (253.61 MB)
+[2026-04-03 22:27:46]    Copied in 115.45s at 4.9 MB/s: user\nand\user\Contents\registered\00000045\91d9ba0cdba11f49fc5445ba76908475.nca
+[2026-04-03 22:27:46]    Pausing 270s - large file (569.11 MB)
+[2026-04-03 22:32:37]    Copied in 21.21s at 5.8 MB/s: user\nand\user\Contents\registered\00000045\c518f6780b70f35c9ec233e602c3f65b.nca
+[2026-04-03 22:32:39]    Copied in 0.98s at 0.2 MB/s: user\nand\user\Contents\registered\00000046\350de6a2affa2d788ec288e0e2d7b682.nca
+[2026-04-03 22:32:40]    Copied in 0.56s at 0.3 MB/s: user\nand\user\Contents\registered\00000047\53e992064f176b1d7ee25d595f54730e.nca
+[2026-04-03 22:33:22]    Copied in 40.8s at 3 MB/s: user\nand\user\Contents\registered\00000049\facf1949f0d037d8f53b653755b436f4.nca
+[2026-04-03 22:33:22]    Pausing 45s - slow write detected (3 MB/s < 5 MB/s threshold)
+[2026-04-03 22:34:13]    Copied in 5.54s at 9.2 MB/s: user\nand\user\Contents\registered\0000004B\31b2dc7aac358a236ce6da91006ff6bc.nca
+[2026-04-03 22:34:14]    Copied in 0.55s at 0 MB/s: user\nand\user\Contents\registered\0000004B\62dc2f3d7eae0e7d2bea69bdddffb31b.nca
+[2026-04-03 22:34:15]    Copied in 0.6s at 2.1 MB/s: user\nand\user\Contents\registered\0000004D\575f159e6f65bd2e4c69c78ee38378e0.nca
+[2026-04-03 22:34:16]    Copied in 0.78s at 0.3 MB/s: user\nand\user\Contents\registered\0000004D\af799b7b8ed01406962af23eabb0c0a8.nca
+[2026-04-03 22:34:18]    Copied in 1.28s at 0 MB/s: user\nand\user\Contents\registered\0000004E\767f7d520b8081ca3884f69b45ea3eb5.nca
+[2026-04-03 22:35:31]    Copied in 72.04s at 4.7 MB/s: user\nand\user\Contents\registered\0000004F\e7b6088c36eb74a78676ac8b8c45f848.nca
+[2026-04-03 22:35:31]    Pausing 180s - large file (337.47 MB)
+[2026-04-03 22:38:32]    Copied in 0.53s at 0 MB/s: user\nand\user\Contents\registered\00000051\7126616edc8f3353ddaa68f4c7632fde.nca
+[2026-04-03 22:38:33]    Copied in 0.53s at 0.2 MB/s: user\nand\user\Contents\registered\00000053\8fa517fd8dd4a942c16c5ccd04dc93b6.nca
+[2026-04-03 22:38:34]    Copied in 0.55s at 0.4 MB/s: user\nand\user\Contents\registered\00000054\4388e225d9a0be8580eeeddbf2033adc.nca
+[2026-04-03 22:38:35]    Copied in 0.54s at 0.4 MB/s: user\nand\user\Contents\registered\00000057\1d2b2a5cc743450d45d745d57d089775.nca
+[2026-04-03 22:38:36]    Copied in 0.54s at 0 MB/s: user\nand\user\Contents\registered\00000057\daf2a356254227fd91fa101669519323.nca
+[2026-04-03 22:38:37]    Copied in 0.55s at 0.3 MB/s: user\nand\user\Contents\registered\00000058\5c7db852abca0ab2ed2c43caf10d88f1.nca
+[2026-04-03 22:38:43]    Copied in 5.79s at 7.3 MB/s: user\nand\user\Contents\registered\00000058\5ea34ea3a25a3850317f51f2fb66fc60.nca
+[2026-04-03 22:38:45]    Copied in 1.02s at 1.5 MB/s: user\nand\user\Contents\registered\0000005B\802238dad91ece4da3cab1c3c1e417ca.nca
+[2026-04-03 22:38:49]    Copied in 3.9s at 6.8 MB/s: user\nand\user\Contents\registered\00000060\0b48cb4ec8db87d3761d16cd35796aaf.nca
+[2026-04-03 22:38:51]    Copied in 1.45s at 6.2 MB/s: user\nand\user\Contents\registered\00000066\306fb55e9348f9f149e516b4341b3f8e.nca
+[2026-04-03 22:38:53]    Copied in 0.55s at 0 MB/s: user\nand\user\Contents\registered\00000067\f041e79025943df67fc7e3cf16083ec5.nca
+[2026-04-03 22:38:56]    Copied in 2.15s at 7 MB/s: user\nand\user\Contents\registered\0000006A\20565bd7a589d62751aa8bebaafc5230.nca
+[2026-04-03 22:38:57]    Copied in 0.55s at 0.3 MB/s: user\nand\user\Contents\registered\0000006D\06f38a6c860cbc7e4a1a80a1616a4e62.nca
+[2026-04-03 22:38:57]    Copied in 0.52s at 0 MB/s: user\nand\user\Contents\registered\0000006D\7f335afd01bb72a7fd6fed6eda484e3e.nca
+[2026-04-03 22:38:59]    Copied in 0.55s at 0.3 MB/s: user\nand\user\Contents\registered\0000006E\c9352ed0983210a2553649088338177b.nca
+[2026-04-03 22:39:00]    Copied in 0.64s at 3.1 MB/s: user\nand\user\Contents\registered\00000071\dbc851e0da62cc77be5177facc957b9d.nca
+[2026-04-03 22:39:01]    Copied in 0.57s at 1.3 MB/s: user\nand\user\Contents\registered\00000073\eb241ea8e9bd3bc294c7b5759d183e62.nca
+[2026-04-03 22:53:21]    Copied in 858.87s at 5.5 MB/s: user\nand\user\Contents\registered\00000075\b050059818519034176e19cd5524a426.nca
+[2026-04-03 22:53:21]    Pausing 300s - large file (4696.2 MB)
+[2026-04-03 22:58:23]    Copied in 0.87s at 1.6 MB/s: user\nand\user\Contents\registered\00000076\8e795e0e52aea3360ac743505cc479f5.nca
+[2026-04-03 22:58:24]    Copied in 0.53s at 0 MB/s: user\nand\user\Contents\registered\00000078\3704bbd50f9df9e652f37dc72f6f2c1c.nca
+[2026-04-03 22:58:24]    Copied in 0.53s at 0 MB/s: user\nand\user\Contents\registered\00000078\6fe872015bd072b75e38bc3de52de23c.nca
+[2026-04-03 22:59:55]    Copied in 90.33s at 4.1 MB/s: user\nand\user\Contents\registered\00000078\9bad7b0b2e5f3bed334b0d210477df3b.nca
+[2026-04-03 22:59:55]    Pausing 180s - large file (368.54 MB)
+[2026-04-03 23:02:55]    Copied in 0.67s at 0 MB/s: user\nand\user\Contents\registered\00000078\aa01ad205ed36017f0454ffda192a9c7.nca
+[2026-04-03 23:02:57]    Copied in 0.53s at 0 MB/s: user\nand\user\Contents\registered\00000079\3b165d41d152936d46259d403635148b.nca
+[2026-04-03 23:02:58]    Copied in 0.84s at 1.5 MB/s: user\nand\user\Contents\registered\0000007B\46646d7d1f4a0464181969ee944a7e6d.nca
+[2026-04-03 23:02:59]    Copied in 0.53s at 0 MB/s: user\nand\user\Contents\registered\0000007B\da39f3bf3e5751501b8695d293a6f286.nca
+[2026-04-03 23:03:20]    Copied in 20.28s at 2.8 MB/s: user\nand\user\Contents\registered\00000080\f02d4643945af01886af63d8e6bfaa73.nca
+[2026-04-03 23:03:20]    Pausing 45s - slow write detected (2.8 MB/s < 5 MB/s threshold)
+[2026-04-03 23:04:06]    Copied in 0.83s at 1.5 MB/s: user\nand\user\Contents\registered\00000083\4ce7248ff0f0eeada99f4c4ffc61b96a.nca
+[2026-04-03 23:04:07]    Copied in 1.09s at 1.1 MB/s: user\nand\user\Contents\registered\00000083\9c4eee576d3ee1766713f3050015ebab.nca
+[2026-04-03 23:04:09]    Copied in 1.65s at 0.1 MB/s: user\nand\user\Contents\registered\00000083\d72f28800620db5f38c21a6a68058f42.nca
+[2026-04-03 23:04:11]    Copied in 0.67s at 0.8 MB/s: user\nand\user\Contents\registered\00000084\87ea1eb8f5f8d3f3f0a5aace87912c2d.nca
+[2026-04-03 23:04:12]    Copied in 0.85s at 1.4 MB/s: user\nand\user\Contents\registered\00000086\72565916b41a92ef0ac1c5f07883cd84.nca
+[2026-04-03 23:06:06]    Copied in 113.35s at 4.9 MB/s: user\nand\user\Contents\registered\00000088\8c22f51d97d8abe24a46192f90634596.nca
+[2026-04-03 23:06:06]    Pausing 270s - large file (560.42 MB)
+[2026-04-03 23:10:38]    Copied in 0.84s at 0.2 MB/s: user\nand\user\Contents\registered\0000008B\19c7daa4e95acf53a30fa6a180d72cd5.nca
+[2026-04-03 23:10:39]    Copied in 0.56s at 0 MB/s: user\nand\user\Contents\registered\0000008E\646130cbd1a3aa2530ff020eb0eef86c.nca
+[2026-04-03 23:10:41]    Copied in 0.53s at 0 MB/s: user\nand\user\Contents\registered\0000008F\61f71e653a3fa89d864b554cbec5d2c4.nca
+[2026-04-03 23:10:42]    Copied in 0.69s at 0.8 MB/s: user\nand\user\Contents\registered\00000090\501183265ff158802c0f1e2c670ec2b8.nca
+[2026-04-03 23:16:25]    Copied in 343.05s at 3.9 MB/s: user\nand\user\Contents\registered\00000090\b201291d3e099872debd1c1870572cc3.nca
+[2026-04-03 23:16:25]    Pausing 300s - large file (1328.64 MB)
+[2026-04-03 23:21:27]    Copied in 0.9s at 1.5 MB/s: user\nand\user\Contents\registered\00000091\ce12fdd01d899a930c492da5c117cac7.nca
+[2026-04-03 23:21:28]    Copied in 0.56s at 0 MB/s: user\nand\user\Contents\registered\00000093\e2a35578a71aa55d5ef397ba93d60d16.nca
+[2026-04-03 23:21:29]    Copied in 0.56s at 0 MB/s: user\nand\user\Contents\registered\00000096\57a1cc61741e8a375f06a25a4da967d0.nca
+[2026-04-03 23:21:32]    Copied in 1.58s at 0.1 MB/s: user\nand\user\Contents\registered\00000098\0958ce1d5d65a6a57ee2ef62c3dc4f1a.nca
+[2026-04-03 23:21:35]    Copied in 2.39s at 2.2 MB/s: user\nand\user\Contents\registered\00000099\aa70089f473b176ce4d0e3c4b7dc1192.nca
+[2026-04-03 23:25:52]    Copied in 256.1s at 4.2 MB/s: user\nand\user\Contents\registered\0000009B\12e5c4387deb1ee26c6deca6ea3c4b3d.nca
+[2026-04-03 23:25:52]    Pausing 300s - large file (1078.83 MB)
+[2026-04-03 23:30:53]    Copied in 0.57s at 0.6 MB/s: user\nand\user\Contents\registered\0000009C\ed3f6f976dc2e25da7a04c4dd8475673.nca
+[2026-04-03 23:30:55]    Copied in 0.88s at 1.6 MB/s: user\nand\user\Contents\registered\0000009E\f25a66dbbd6da404fe9171e0570a51f7.nca
+[2026-04-03 23:30:56]    Copied in 0.56s at 0 MB/s: user\nand\user\Contents\registered\000000A4\6e025046a89ef71b03a95bf461d9f0fb.nca
+[2026-04-03 23:30:57]    Copied in 0.53s at 0 MB/s: user\nand\user\Contents\registered\000000A5\3ed28729ee07c6dae8ea327969eb082d.nca
+[2026-04-03 23:30:58]    Copied in 0.57s at 0 MB/s: user\nand\user\Contents\registered\000000A5\54fa298ae85343594928b05e363da22c.nca
+[2026-04-03 23:31:06]    Copied in 7.5s at 2.7 MB/s: user\nand\user\Contents\registered\000000A8\f63b214ebf77033fecfc1ac03e8576f9.nca
+[2026-04-03 23:31:06]    Pausing 45s - slow write detected (2.7 MB/s < 5 MB/s threshold)
+[2026-04-03 23:37:11]    Copied in 318.09s at 4.2 MB/s: user\nand\user\Contents\registered\000000AD\01fbfd0e60521dfb067745262981469f.nca
+[2026-04-03 23:37:11]    Pausing 300s - large file (1324.94 MB)
+[2026-04-03 23:42:46]    Copied in 34.01s at 4.8 MB/s: user\nand\user\Contents\registered\000000AE\c23ca8eef74403bb336529fcf40c4872.nca
+[2026-04-03 23:42:46]    Pausing 45s - slow write detected (4.8 MB/s < 5 MB/s threshold)
+[2026-04-03 23:43:32]    Copied in 0.55s at 0.5 MB/s: user\nand\user\Contents\registered\000000AF\813262bbf318d2351d4c896229bed4f3.nca
+[2026-04-03 23:44:10]    Copied in 37.76s at 4.6 MB/s: user\nand\user\Contents\registered\000000B1\3cea53d9e4e38d5db29e28aa2c1a6c59.nca
+[2026-04-03 23:44:10]    Pausing 45s - slow write detected (4.6 MB/s < 5 MB/s threshold)
+[2026-04-03 23:44:55]    Copied in 0.13s at 13.1 MB/s: user\nand\user\Contents\registered\000000B3\9cd3d97e1273d8f7b3d3ce26c873955c.nca
+[2026-04-03 23:44:56]    Copied in 0.13s at 17.9 MB/s: user\nand\user\Contents\registered\000000B4\fc1066f0cee1eff0ed481f9d93dc4ec9.nca
+[2026-04-03 23:44:56]    Copied in 0.09s at 14.1 MB/s: user\nand\user\Contents\registered\000000B5\778a426473d99520484358bc01c321d2.nca
+[2026-04-03 23:44:56]    Copied in 0.07s at 12.7 MB/s: user\nand\user\Contents\registered\000000B8\45fd4f32f434e5fc75bfddc0ade37caa.nca
+[2026-04-03 23:45:58]    Copied in 62.26s at 3.7 MB/s: user\nand\user\Contents\registered\000000B8\a8cceab7731559863105acef1ff6b06f.nca
+[2026-04-03 23:45:58]    Pausing 180s - large file (230.67 MB)
+[2026-04-03 23:53:42]    Copied in 283.83s at 5.4 MB/s: user\nand\user\Contents\registered\000000B8\dcc4af0e8d36b5ed6730c98f201c4278.nca
+[2026-04-03 23:53:42]    Pausing 300s - large file (1534.55 MB)
+[2026-04-03 23:58:42]    Copied in 0.05s at 0.2 MB/s: user\nand\user\Contents\registered\000000BC\804a2c974bb8bd4a18bf36fb0521dd6f.nca
+[2026-04-03 23:58:44]    Copied in 1.45s at 19.5 MB/s: user\nand\user\Contents\registered\000000BC\8e367474d961c278b501769c2b7d654e.nca
+[2026-04-03 23:58:44]    Copied in 0.08s at 11.2 MB/s: user\nand\user\Contents\registered\000000BF\41563ebfa3c04020866763b365070a74.nca
+[2026-04-03 23:58:44]    Copied in 0.04s at 2.8 MB/s: user\nand\user\Contents\registered\000000BF\b1f1caf6c31e2d62a226b6b3a81e80c6.nca
+[2026-04-03 23:58:46]    Copied in 1.88s at 19.3 MB/s: user\nand\user\Contents\registered\000000C1\1fc0d3321d67371474f03f4796d59bfa.nca
+[2026-04-03 23:58:46]    Copied in 0.04s at 0.2 MB/s: user\nand\user\Contents\registered\000000C3\1c4377733791d664cae1bba06755a01c.nca
+[2026-04-04 00:17:27]    Copied in 1121.57s at 4.1 MB/s: user\nand\user\Contents\registered\000000C5\54e94baea54c082e3dfcc6f86dbc3e0a.nca
+[2026-04-04 00:17:27]    Pausing 300s - large file (4564.4 MB)
+[2026-04-04 09:36:51] === Eden copy started ===
+[2026-04-04 09:36:51] Source: C:\MY_GAMES\Eden\
+[2026-04-04 09:36:51] Dest:   D:\Eden
+[2026-04-04 09:36:51] Found 503 files to process.
+[2026-04-04 09:36:53]    Copied in 0.58s at 0.4 MB/s: user\nand\user\Contents\registered\000000C6\437b40c5e477348631d6ae0b948af0fb.nca
+[2026-04-04 09:36:54]    Copied in 1s at 1.5 MB/s: user\nand\user\Contents\registered\000000C6\9e86d00e1d417de1b1ae910937fdb1cd.nca
+[2026-04-04 09:36:55]    Copied in 0.07s at 2.9 MB/s: user\nand\user\Contents\registered\000000C7\00c9aa49f704fcf16c77e4eeb05b59e7.nca
+[2026-04-04 09:36:55]    Copied in 0.06s at 1.8 MB/s: user\nand\user\Contents\registered\000000C7\425bc9fee68392245cb1fa2a1229c0ba.nca
+[2026-04-04 09:36:56]    Copied in 0.05s at 0.2 MB/s: user\nand\user\Contents\registered\000000C8\b9e288cbeefe71c567fa59885f3a6909.nca
+[2026-04-04 09:36:56]    Copied in 0.07s at 3.3 MB/s: user\nand\user\Contents\registered\000000CC\256a08f05a4c9ebc929210baa5bdb68d.nca
+[2026-04-04 09:36:56]    Copied in 0.06s at 3.3 MB/s: user\nand\user\Contents\registered\000000CF\60d84b361e606f9cfb8d556c129651ab.nca
+[2026-04-04 09:36:56]    Copied in 0.05s at 28.2 MB/s: user\nand\user\Contents\registered\000000D2\1bcc7e4b20fed14f4f56142b29fb8d01.nca
+[2026-04-04 09:41:04]    Copied in 248.5s at 5.4 MB/s: user\nand\user\Contents\registered\000000D2\d53dbfcf0a876dddc129cdeab894adbe.nca
+[2026-04-04 09:41:04]    Pausing 300s - large file (1342 MB)
+[2026-04-04 09:48:48] === Eden copy started ===
+[2026-04-04 09:48:48] Source: C:\MY_GAMES\Eden\
+[2026-04-04 09:48:48] Dest:   D:\Eden
+[2026-04-04 09:48:48] Found 503 files to process.
+[2026-04-04 09:48:50]    Copied in 0.83s at 0.3 MB/s: user\nand\user\Contents\registered\000000D2\fd79cf0daac87c46001f18c88236c065.nca
+[2026-04-04 09:48:51]    Copied in 1s at 1.5 MB/s: user\nand\user\Contents\registered\000000D3\8f5e33bb197799e6dd04538977432b75.nca
+[2026-04-04 09:48:53]    Copied in 0.56s at 0.1 MB/s: user\nand\user\Contents\registered\000000D5\83b76353736d162bf9b55a06ef03ed5b.nca
+[2026-04-04 09:48:53]    Copied in 0.56s at 0 MB/s: user\nand\user\Contents\registered\000000D5\d229b770360035a9b017f3adcbb9dd5b.nca
+[2026-04-04 09:48:54]    Copied in 0.56s at 0 MB/s: user\nand\user\Contents\registered\000000D7\2b8c878245493ee1b26807c65e023adf.nca
+[2026-04-04 09:48:56]    Copied in 0.56s at 0 MB/s: user\nand\user\Contents\registered\000000D8\a9491232f8b50156c06ededc083cc334.nca
+[2026-04-04 09:48:57]    Copied in 0.76s at 1 MB/s: user\nand\user\Contents\registered\000000E0\9ceee76ef8cf8389536d95a5a5973b11.nca
+[2026-04-04 09:49:01]    Copied in 3s at 2.6 MB/s: user\nand\user\Contents\registered\000000E3\1d1c51311f2c5c2eed996a9500b813c2.nca
+[2026-04-04 09:49:02]    Copied in 0.58s at 0 MB/s: user\nand\user\Contents\registered\000000E4\07ac981de0f82005ef842804d0f88cce.nca
+[2026-04-04 09:49:24]    Cache pause at 104 MB ( MB/s) - waiting 20s
+[2026-04-04 09:50:02]    Cache pause at 156 MB ( MB/s) - waiting 20s
+[2026-04-04 09:50:31]    Cache pause at 208 MB ( MB/s) - waiting 20s
+[2026-04-04 09:51:17]    Cache pause at 416 MB ( MB/s) - waiting 20s
+[2026-04-04 09:51:50]    Cache pause at 468 MB ( MB/s) - waiting 20s
+[2026-04-04 09:52:28] === Eden copy started ===
+[2026-04-04 09:52:28] Source: C:\MY_GAMES\Eden\
+[2026-04-04 09:52:28] Dest:   D:\Eden
+[2026-04-04 09:52:28] Found 503 files to process.
+[2026-04-04 09:53:18]    Cache pause at 260 MB ( MB/s) - waiting 15s
+[2026-04-04 09:53:51]    Cache pause at 364 MB ( MB/s) - waiting 15s
+[2026-04-04 09:54:33]    Cache pause at 468 MB ( MB/s) - waiting 15s
+[2026-04-04 09:55:27]    Cache pause at 728 MB ( MB/s) - waiting 15s
+[2026-04-04 09:55:59]    Cache pause at 780 MB ( MB/s) - waiting 15s
+[2026-04-04 10:06:56] === Eden copy started ===
+[2026-04-04 10:06:56] Source: C:\MY_GAMES\Eden\
+[2026-04-04 10:06:56] Dest:   D:\Eden
+[2026-04-04 10:06:56] Found 503 files to process.
+[2026-04-04 10:06:57] 
+[2026-04-04 10:06:57] === Eden copy finished ===
+[2026-04-04 10:06:57]   Copied:  0
+[2026-04-04 10:06:57]   Skipped: 503 (already existed)
+[2026-04-04 10:06:57]   Failed:  0
+[2026-04-04 10:06:57]   Pauses:  0
+[2026-04-04 10:06:57]   Full log:  C:\Users\jason\OneDrive\Desktop\shells\Eden_copy_log.txt
+[2026-04-04 11:06:25] === Eden copy started ===
+[2026-04-04 11:06:25] Source: C:\MY_GAMES\Eden\
+[2026-04-04 11:06:25] Dest:   D:\Eden
+[2026-04-04 11:06:25] Found 503 files to process.
+[2026-04-04 11:06:26] 
+[2026-04-04 11:06:26] === Eden copy finished ===
+[2026-04-04 11:06:26]   Copied:   0
+[2026-04-04 11:06:26]   Verified: 0 / 0
+[2026-04-04 11:06:26]   Skipped:  503 (already existed)
+[2026-04-04 11:06:26]   Failed:   0
+[2026-04-04 11:06:26]   Pauses:   0
+[2026-04-04 11:06:26]   Full log:  C:\Users\jason\OneDrive\Desktop\shells\Eden_copy_log.txt
+[2026-04-04 11:12:35] === Eden copy started ===
+[2026-04-04 11:12:35] Source: C:\MY_GAMES\Eden\
+[2026-04-04 11:12:35] Dest:   D:\Eden
+[2026-04-04 11:12:35] Found 503 files to process.
+[2026-04-04 11:12:35] 
+[2026-04-04 11:12:35] === Eden copy finished ===
+[2026-04-04 11:12:35]   Copied:   0
+[2026-04-04 11:12:35]   Verified: 0 / 0
+[2026-04-04 11:12:35]   Skipped:  503 (already existed)
+[2026-04-04 11:12:35]   Failed:   0
+[2026-04-04 11:12:35]   Pauses:   0
+[2026-04-04 11:12:35]   Full log:  C:\Users\jason\OneDrive\Desktop\shells\Eden_copy_log.txt
