@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"G:\\\\main_backup\\\\media\\\\lossless_music\\\\FULL_ALBUMS\\\\studio\\\\Pink Floyd\\\\\" | ForEach-Object { $_.FullName })",
+      "PowerShell(cmd /c \"dir /B \"\"G:\\\\main_backup\\\\media\\\\lossless_music\\\\FULL_ALBUMS\\\\studio\\\\Pink Floyd\"\"\")",
+      "PowerShell(python -c \"import os; dirs = os.listdir\\(r'G:\\\\main_backup\\\\media\\\\lossless_music\\\\FULL_ALBUMS\\\\studio\\\\Pink Floyd'\\); [print\\(repr\\(d\\)\\) for d in dirs]\")",
+      "PowerShell(python -c \"import os; dirs = os.listdir\\(r'G:\\\\main_backup\\\\media\\\\lossless_music\\\\FULL_ALBUMS\\\\studio\\\\Pink Floyd\\\\Pink Floyd - The Early Years, 1967-1972, Cre'\\); [print\\(repr\\(d\\)\\) for d in dirs]\")"
+    ]
+  }
+}
